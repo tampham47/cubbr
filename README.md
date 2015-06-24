@@ -12,6 +12,7 @@ http://www.quora.com/
 ## Khởi chạy ứng dụng
 gõ `meteor` để chạy
 site map (http://localhost:3000/)
+
   - activ          : danh sách các activities
   - activ/new      : tạo mới activity
   - activ/detail   : chi tiết một activity
