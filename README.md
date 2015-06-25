@@ -29,3 +29,7 @@ site map (http://localhost:3000/)
 
   - login          :
   - update-info    :
+
+
+## Một số rules
+- Dùng space thay cho tab, và space size là 2
