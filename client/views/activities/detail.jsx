@@ -1,6 +1,6 @@
 
-ActivDetail = ReactMeteor.createClass({
-  templateName: 'ActivDetail',
+ActivDetailTpt = ReactMeteor.createClass({
+  templateName: 'ActivDetailTpt',
 
   startMeteorSubscriptions: function() {
   },
@@ -13,7 +13,7 @@ ActivDetail = ReactMeteor.createClass({
     return (
       <div>
         <Header/>
-        <p>ActivDetail</p>
+        <p>ActivDetailTpt</p>
         <Footer/>
       </div>
     );

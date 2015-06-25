@@ -1,6 +1,6 @@
 
-ActivNewTpt = ReactMeteor.createClass({
-  templateName: 'ActivNewTpt',
+LoginTpt = ReactMeteor.createClass({
+  templateName: 'LoginTpt',
 
   startMeteorSubscriptions: function() {
   },
@@ -9,16 +9,11 @@ ActivNewTpt = ReactMeteor.createClass({
   getMeteorState: function() {
   },
 
-  showLog: function() {
-    console.log('show log');
-  },
-
   render: function() {
     return (
       <div>
         <Header/>
-        <p>ActivNewTpt</p>
-        <button onClick={this.showLog}>CLICK</button>
+        <p>LoginTpt</p>
         <Footer/>
       </div>
     );

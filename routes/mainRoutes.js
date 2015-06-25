@@ -1,19 +1,29 @@
 Router.route('/', function () {
-  this.render('Home');
+  this.render('HomeTpt');
   SEO.set({ title: 'Home -' + Meteor.App.NAME });
 });
 
 Router.route('/activ', function () {
-  this.render('ActivList');
+  this.render('ActivListTpt');
   SEO.set({ title: 'Home -' + Meteor.App.NAME });
 });
 
 Router.route('/activ/new', function () {
-  this.render('ActivNew');
+  this.render('ActivNewTpt');
   SEO.set({ title: 'Home -' + Meteor.App.NAME });
 });
 
 Router.route('/activ/detail', function () {
-  this.render('ActivDetail');
+  this.render('ActivDetailTpt');
+  SEO.set({ title: 'Home -' + Meteor.App.NAME });
+});
+
+Router.route('/login', function () {
+  this.render('LoginTpt');
+  SEO.set({ title: 'Home -' + Meteor.App.NAME });
+});
+
+Router.route('/update-profile', function () {
+  this.render('UpdateProfileTpt');
   SEO.set({ title: 'Home -' + Meteor.App.NAME });
 });

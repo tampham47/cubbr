@@ -1,6 +1,6 @@
 
-ActivList = ReactMeteor.createClass({
-  templateName: 'ActivList',
+ActivListTpt = ReactMeteor.createClass({
+  templateName: 'ActivListTpt',
 
   startMeteorSubscriptions: function() {
   },
@@ -13,7 +13,7 @@ ActivList = ReactMeteor.createClass({
     return (
       <div>
         <Header/>
-        <p>ActivList</p>
+        <p>ActivListTpt</p>
         <Footer/>
       </div>
     );
