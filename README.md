@@ -3,9 +3,10 @@ Là ứng dụng giúp người dùng nói chuyện với những người xung 
 
 
 ## Công nghệ sử dụng
+Hệ thống được phát triển dưới framework meteor, đồng thời dùng reactjs như là một phần view để render giao diện.
+
 Frame work css for mobile?
 http://goratchet.com/
-
 Giao diện mang hơi hướng
 http://www.quora.com/
 
