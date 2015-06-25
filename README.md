@@ -33,3 +33,5 @@ site map (http://localhost:3000/)
 
 ## Một số rules
 - Dùng space thay cho tab, và space size là 2
+- Sử dụng afterfix `Tpt` sau mỗi tên template
+- Tên các template được viết hoa chữ đầu dòng NhuTheNay.
