@@ -1,6 +1,19 @@
-Router.route('/', function () {
-  this.render('HomeTpt');
-  SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+//
+
+// Router.onBeforeAction(function() {
+//   if (!Meteor.userId()) {
+//     this.render('ActivListTpt');
+//   } else {
+//     this.next();
+//   }
+// });
+
+Router.route('/', {
+  name: 'HomeTpt',
+  action: function () {
+    this.render('HomeTpt');
+    SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+  }
 });
 
 Router.route('/activ', function () {
