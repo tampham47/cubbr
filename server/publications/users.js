@@ -8,9 +8,9 @@ Meteor.publish('Users.current', function () {
 });
 
 Meteor.publish('Users.getByLocation', function() {
-  return Users.find({});
+  return Meteor.users.find({});
 });
 
 Meteor.publish('Users.getAll', function() {
-  return Users.find({});
+  return Meteor.users.find({});
 });
