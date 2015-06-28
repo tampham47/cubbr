@@ -2,9 +2,13 @@
 
 Topics = new Mongo.Collection('Topics');
 
-Topics.helpers({
-});
+Meteor.methods({
+  'Topics.create': function() {
+  },
 
-// Topics.before.insert(function (userId, doc) {
-//   doc.createdAt = moment().toDate();
-// });
+  'Topics.remove': function() {
+  },
+
+  'Topics.update': function() {
+  }
+});

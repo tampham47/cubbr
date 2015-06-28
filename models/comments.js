@@ -2,9 +2,13 @@
 
 Comments = new Mongo.Collection('Comments');
 
-Comments.helpers({
-});
+Meteor.methods({
+  'Comments.create': function() {
+  },
 
-// Comments.before.insert(function (userId, doc) {
-//   doc.createdAt = moment().toDate();
-// });
+  'Comments.remove': function() {
+  },
+
+  'Comments.update': function() {
+  }
+});

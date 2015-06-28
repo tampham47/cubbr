@@ -2,9 +2,13 @@
 
 Messages = new Mongo.Collection('Messages');
 
-Messages.helpers({
-});
+Meteor.methods({
+  'Messages.create': function() {
+  },
 
-// Messages.before.insert(function (userId, doc) {
-//   doc.createdAt = moment().toDate();
-// });
+  'Messages.remove': function() {
+  },
+
+  'Messages.update': function() {
+  }
+});

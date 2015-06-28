@@ -2,9 +2,13 @@
 
 Activities = new Mongo.Collection('Activities');
 
-Activities.helpers({
-});
+Meteor.methods({
+  'Activities.create': function() {
+  },
 
-// Activities.before.insert(function (userId, doc) {
-//   doc.createdAt = moment().toDate();
-// });
+  'Activities.remove': function() {
+  },
+
+  'Activities.update': function() {
+  }
+});
