@@ -1,0 +1,36 @@
+@import "variables";
+
+.header {
+	background: @headerBg;
+	color: @headerCl;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height: @headerH;
+	padding: 0 @gutter;
+	z-index: 10;
+}
+
+.header__list {
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1;
+		width: 50%;
+		margin-left: -4px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			text-align: right;
+		}
+	}
+
+	.logo {
+		color: @headerCl;
+		font-size: 1.5rem;
+	}
+}

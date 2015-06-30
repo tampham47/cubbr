@@ -1,0 +1,64 @@
+@import "variables";
+
+body {
+	font-family: Roboto;
+	font-size: @baseFS;
+}
+
+// ----------
+// Page
+// ----------
+
+.page-wrapper {
+	height: 100%;
+}
+
+.page-content-container {
+	padding-top: @headerH;
+}
+
+// ----------
+// Absolute center
+// ----------
+
+.abs-center {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+
+	&:before {
+		content: '';
+		margin-left: -4px;
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.abs-center__content {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+// --------
+// Display
+// --------
+
+.ib {
+	display: inline-block;
+
+	&.vm {
+		vertical-align: middle;
+	}
+
+	&.vt {
+		vertical-align: top;
+	}
+
+	&.vb {
+		vertical-align: bottom;
+	}
+}
