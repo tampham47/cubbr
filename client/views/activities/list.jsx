@@ -1,9 +1,9 @@
 
 ActivListTpt = ReactMeteor.createClass({
-  templateName: 'ActivListTpt',
+	templateName: 'ActivListTpt',
 
-  startMeteorSubscriptions: function() {
-  },
+	startMeteorSubscriptions: function() {
+	},
 
   // Make sure your component implements this method.
   getMeteorState: function() {
@@ -15,13 +15,14 @@ ActivListTpt = ReactMeteor.createClass({
   },
 
   render: function() {
-    return (
-      <div>
-        <Header/>
-        <a href="/">Home</a>
-        <p>ActivListTpt</p>
-        <Footer/>
-      </div>
-    );
-  }
+		return (
+			<div>
+				<Header type="activities"/>
+				<section className="page-content-container page-login">
+					<Tabs active="activities" />
+					<List />
+				</section>
+			</div>
+		);
+	}
 });

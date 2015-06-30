@@ -1,0 +1,62 @@
+@import "variables";
+
+.list {
+
+}
+
+.list__title {
+	padding: 10px @gutter;
+	background: #ecf0f1;
+}
+
+.list__content {
+	.item-flex {
+		display: flex;
+		display: -ms-flex;
+	}
+}
+
+.item-flex {
+	padding: 10px 0;
+	border-bottom: 1px solid @color-border;
+
+	.img {
+		width: 10%;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.content {
+		width: 85%;
+		flex-grow: 7;
+		padding: 0 @gutter;
+
+		.author {
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+
+		.des {
+			margin-bottom: 10px;
+		}
+
+		.time {
+			font-style: italic;
+			font-size: 14px;
+		}
+	}
+
+	.arrow {
+		width: 5%;
+		padding: 0 10px;
+		align-self: center;
+		text-align: center;
+		min-width: 30px;
+	}
+
+	.fa-angle-right {
+		font-size: 1.875rem; /* 30/16 */
+	}
+}
