@@ -18,6 +18,10 @@ Header = React.createClass({
 				this.center = 'Cập nhật thông tin';
 				this.rightSide = (<i className="fa fa-angle-right"></i>);
 				break;
+			case 'activities':
+				this.leftSide = (<a href="/" className="logo">Cubbr</a>);
+				this.rightSide = (<div><i className="fa fa-plus ib vm"></i><div className="ib vm"><i className="fa fa-comment-o"></i></div></div>);
+				break;
 			default:
 		}
 	},
