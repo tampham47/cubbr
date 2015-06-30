@@ -10,10 +10,13 @@ Header = React.createClass({
 
 		switch (type) {
 			case 'login':
-				this.header = (<ul className="header__list">
-								<li><a href="/" className="logo">Cubbr</a></li>
-								<li>Thông tin ?</li>
-							</ul>);
+				this.leftSide = (<a href="/" className="logo">Cubbr</a>);
+				this.rightSide = 'Thông tin ?';
+
+				break;
+			case 'update-profile':
+				this.center = 'Cập nhật thông tin';
+				this.rightSide = (<i className="fa fa-angle-right"></i>);
 				break;
 			default:
 		}
@@ -23,7 +26,11 @@ Header = React.createClass({
   		var type = this.props.type;
 
     	return (<header className="header">
-    			{ this.header }
+    			<ul className="header__list">
+    				<li className="left-side">{this.leftSide}</li>
+    				<li className="center">{this.center}</li>
+    				<li className="right-side">{this.rightSide}</li>
+    			</ul>
     		</header>);
   	}
 });
