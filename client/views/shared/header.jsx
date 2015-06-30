@@ -22,6 +22,11 @@ Header = React.createClass({
 				this.leftSide = (<a href="/" className="logo">Cubbr</a>);
 				this.rightSide = (<div><i className="fa fa-plus ib vm"></i><div className="ib vm"><i className="fa fa-comment-o"></i></div></div>);
 				break;
+			case 'activities-new':
+				this.leftSide = 'Hủy';
+				this.center = 'Đăng hoạt động';
+				this.rightSide = 'Đăng';
+				break;
 			default:
 		}
 	},
