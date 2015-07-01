@@ -16,10 +16,10 @@ ActivListTpt = ReactMeteor.createClass({
 
   render: function() {
 		return (
-			<div>
+			<div className="has-tabs">
 				<Header type="activities"/>
-				<section className="page-content-container has-tabs">
-					<Tabs active="activities" />
+				<Tabs active="activities" />
+				<section className="content page-content-container">
 					<List />
 				</section>
 			</div>

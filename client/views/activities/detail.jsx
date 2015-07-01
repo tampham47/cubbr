@@ -1,21 +1,25 @@
 
 ActivDetailTpt = ReactMeteor.createClass({
-  templateName: 'ActivDetailTpt',
+	templateName: 'ActivDetailTpt',
 
-  startMeteorSubscriptions: function() {
-  },
+	startMeteorSubscriptions: function() {
+	},
 
-  // Make sure your component implements this method.
-  getMeteorState: function() {
-  },
+	// Make sure your component implements this method.
+	getMeteorState: function() {
+	},
 
-  render: function() {
-    return (
-      <div>
-        <Header/>
-        <p>ActivDetailTpt</p>
-        <Footer/>
-      </div>
-    );
-  }
+	render: function() {
+		return (
+			<div>
+				<Header type="activities"/>
+				<section className="content page-content-container has-tabs">
+
+					<div className="chat-input">
+						<textarea className="input" name="msg"></textarea>
+					</div>
+				</section>
+			</div>
+		);
+	}
 });

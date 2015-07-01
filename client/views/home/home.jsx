@@ -26,7 +26,7 @@ HomeTpt = ReactMeteor.createClass({
 	return (
 	  	<div>
 			<Header/>
-			<section className="page-content-container page-activities-new">
+			<section className="content page-content-container page-activities-new">
 				<div className="page-content">
 					<p>Site map!</p>
 
