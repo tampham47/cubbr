@@ -14,7 +14,7 @@ LoginTpt = ReactMeteor.createClass({
 			<div className="page-wrapper">
 				<Header/>
 				<section className="page-content-container page-login">
-					<div className="flex-center">
+					<div className="login-wrap flex h-center v-center">
 						<a href="/update-profile" className="login-fb-btn"><i className="fa fa-facebook-square ib vm"></i><span className="ib vm">Facebook</span></a>
 					</div>
 				</section>

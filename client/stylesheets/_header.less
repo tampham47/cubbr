@@ -28,7 +28,6 @@
 
 	.logo {
 		color: @headerCl;
-		font-size: 1.5rem;
 	}
 
 	.right-side,
@@ -38,29 +37,40 @@
 	}
 
 	.left-side {
-		// left: @gutter;
-		font-size: 1rem;
-		// margin-top: -0.5rem; /* 8/16 */
+		padding-right: 0.625rem; /* 10/16 */
 	}
 
 	.right-side {
-		// right: @gutter;
-		// margin-top: -0.9375rem; /* 15/16 */
+		padding-left: 0.625rem; /* 10/16 */
 	}
 
 	.fa {
-		font-size: 1.875rem; /* 30/16 */
+		font-size: 1.5625rem; /* 25/16 */
+		vertical-align: middle;
 	}
 
 	.fa-comment-o {
 		margin-top: -5px;
+		margin-right: -5px;
 	}
 
 	.fa-plus {
-		margin-right: 20px;
+
 	}
 
-	.center {
-		font-size: 1.5rem; /* 24/16 */
+	a {
+		color: inherit;
+		line-height: @headerH;
+		height: @headerH;
+	}
+
+	.action-list {
+		a {
+			width: @headerH;
+		}
+
+		.message-btn {
+			margin-right: -10px;
+		}
 	}
 }

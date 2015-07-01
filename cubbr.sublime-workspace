@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"act",
+				"active	(list.jsx)"
+			],
+			[
+				"text",
+				"textarea	(update-profile.jsx)"
+			],
+			[
+				"left",
+				"leftSide"
+			],
+			[
+				"componen",
+				"componentWillMount	Life Cycle Method"
+			],
+			[
 				"index",
 				"indexOf()	String"
 			],
@@ -84,10 +100,6 @@
 				"handleInputChange"
 			],
 			[
-				"componen",
-				"componentDidMount	Life Cycle Method"
-			],
-			[
 				"dis",
 				"display"
 			],
@@ -106,10 +118,6 @@
 			[
 				"query",
 				"querySelectorAll()	Element"
-			],
-			[
-				"text",
-				"textarea"
 			],
 			[
 				"tex",
@@ -506,14 +514,6 @@
 			[
 				"cont",
 				"contact"
-			],
-			[
-				"con",
-				"contactCollection"
-			],
-			[
-				"conta",
-				"contactView"
 			]
 		]
 	},
@@ -653,10 +653,46 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/thangkieu/projects/mine/cubbr"
+		"/Users/thangkieu/projects/mine/cubbr/client",
+		"/Users/thangkieu/projects/mine/cubbr/client/views",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/activities",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/shared",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/systems",
+		"/Users/thangkieu/projects/mine/cubbr/routes"
 	],
 	"file_history":
 	[
+		"/Users/thangkieu/projects/mine/cubbr/client/views/activities/new.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/shared/List.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/activities/detail.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/activities/list.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/services/location-service.js",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/shared/header.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_activities.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/shared/tabs.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_header.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_list.less",
+		"/Users/thangkieu/projects/mine/cubbr/routes/mainRoutes.js",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/main.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/systems/login.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/variables.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_tabs.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_input.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_update-profile.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/systems/update-profile.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_global.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/_login.less",
+		"/Users/thangkieu/projects/mine/cubbr/.meteor/local/build/programs/server/npm/reactjs_react/node_modules/react/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-variable-declaration-syntax-test.js",
+		"/Users/thangkieu/projects/mine/cubbr/.scss-lint.yml",
+		"/Users/thangkieu/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/thangkieu/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/icons.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/views/info/login.jsx",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/components/global.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/components/header.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/zcomponents/zheader.less",
+		"/Users/thangkieu/projects/mine/cubbr/client/stylesheets/lib/resetcss.less",
+		"/Users/thangkieu/projects/mine/cubbr/cubbr.sublime-project",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/helpers/BackboneServices.js",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/StaticPagesComp.jsx",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css/app/_popup.scss",
@@ -679,7 +715,6 @@
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/components/typeform/TextInput.jsx",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css/msic.scss",
 		"/Users/thangkieu/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/thangkieu/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/collections/CardCollection.js",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/models/User.js",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/modal/profile/OrderDetails.jsx",
@@ -754,47 +789,18 @@
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/data/config.json",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/data/config-SIT.json",
 		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/reward/UbidDetails.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/reward/RewardDetails.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/PromotionPageComp.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/MerchantPageComp.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css/app/_rewards.scss",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/reward/UbidDetails.jsx.orig",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/components/discover/Ubid.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/components/discover/Voucher.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/index.html",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/Gruntfile.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/components/Popup.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/popup/ReportItemPopup.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/PageBase.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/AppView.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/LoginPage.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/helpers/FoundationExtras.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/views/modals/merchant/MartketplaceApplicationForm.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css/app/_footer.scss",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/lib/jquery.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/AppModel.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/AppView.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/models/GetResponses.js",
-		"/Users/thangkieu/Documents/learning/program.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/index.html",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/views/pages/ProductGrid.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/models/BaseModel.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/views/pages/onboarding/ModalProductDetailReview.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css/foundation/components/_global.scss",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css/common/_image-icons.scss",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/src/js/app/views/pages/onboarding/StoreSetup.jsx",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/collections/FollowCollection.js",
-		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/models/Store.js"
+		"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/reward/RewardDetails.jsx"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/thangkieu/projects/mine/cubbr/client",
 			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app",
 			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css",
 			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/data",
@@ -921,8 +927,7 @@
 			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js",
 			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/css",
 			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages",
-			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views",
-			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views/pages/banking"
+			"/Users/thangkieu/projects/aleph/ntuc-plus-merchant/consumer/src/js/app/views"
 		]
 	},
 	"find_state":
@@ -930,6 +935,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"LocationService",
+			"item-flex",
+			"this.props",
+			"\"item\"",
+			"className",
+			"header",
+			"Header",
+			"em;",
+			"leftSide",
+			"../",
+			"$",
 			"title",
 			"loginErrorMessage",
 			"errorMessage",
@@ -1046,18 +1062,7 @@
 			"		margin-bottom: rem-calc(25px);\n.grid-subheader",
 			".grid-subheader",
 			".modal-profile-follow-favourite",
-			".button-container",
-			"contactNum",
-			"el.",
-			"el",
-			"onchange",
-			"fromDate",
-			"from",
-			"value",
-			"getErrorMsg",
-			"header",
-			"\"API_CONTACT_US\": \"${ SERVICE_ROOT }question\",",
-			"small-6"
+			".button-container"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1157,6 +1162,66 @@
 		"selected_items":
 		[
 			[
+				"new",
+				"client/views/activities/new.jsx"
+			],
+			[
+				"list",
+				"client/views/shared/List.jsx"
+			],
+			[
+				"list.js",
+				"client/views/activities/list.jsx"
+			],
+			[
+				"header",
+				"client/views/shared/header.jsx"
+			],
+			[
+				"_header",
+				"client/stylesheets/_header.less"
+			],
+			[
+				"vari",
+				"client/stylesheets/variables.less"
+			],
+			[
+				"login",
+				"client/views/systems/login.jsx"
+			],
+			[
+				"_login",
+				"client/stylesheets/_login.less"
+			],
+			[
+				"heade",
+				"client/views/shared/header.jsx"
+			],
+			[
+				"vara",
+				"client/stylesheets/variables.less"
+			],
+			[
+				"update",
+				"client/views/systems/update-profile.jsx"
+			],
+			[
+				"variable",
+				"client/stylesheets/variables.less"
+			],
+			[
+				"_vari",
+				".meteor/local/build/programs/server/npm/reactjs_react/node_modules/react/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-variable-declaration-syntax-test.js"
+			],
+			[
+				"_glo",
+				"client/stylesheets/_global.less"
+			],
+			[
+				"var",
+				"client/stylesheets/variables.less"
+			],
+			[
 				"popup",
 				"consumer/src/js/app/views/components/PopupComp.jsx"
 			],
@@ -1191,10 +1256,6 @@
 			[
 				"appmode",
 				"consumer/src/js/app/AppModel.js"
-			],
-			[
-				"login",
-				"consumer/src/js/app/views/pages/LoginPageComp.jsx"
 			],
 			[
 				"_dis",
@@ -1279,10 +1340,6 @@
 			[
 				"modalorder",
 				"consumer/src/js/app/views/modal/profile/OrderDetails.jsx"
-			],
-			[
-				"_header",
-				"consumer/src/css/app/_header.scss"
 			],
 			[
 				"_cart",
@@ -1615,58 +1672,6 @@
 			[
 				"_footer",
 				"consumer/src/css/app/_footer.scss"
-			],
-			[
-				"jquery",
-				"src/js/lib/jquery.js"
-			],
-			[
-				"bsemodel",
-				"consumer/src/js/app/models/BaseModel.js"
-			],
-			[
-				"preview",
-				"src/js/app/views/pages/onboarding/ModalProductDetailReview.jsx"
-			],
-			[
-				"productdeta",
-				"consumer/src/js/app/views/pages/shop/ProductDetails.jsx"
-			],
-			[
-				"_im",
-				"consumer/src/css/common/_image-icons.scss"
-			],
-			[
-				"popupcom",
-				"consumer/src/js/app/views/components/PopupComp.jsx"
-			],
-			[
-				"storeset",
-				"src/js/app/views/pages/onboarding/StoreSetup.jsx"
-			],
-			[
-				"user.js",
-				"consumer/src/js/app/models/User.js"
-			],
-			[
-				"store.js",
-				"consumer/src/js/app/models/Store.js"
-			],
-			[
-				"basemodel",
-				"consumer/src/js/app/models/BaseModel.js"
-			],
-			[
-				"get",
-				"consumer/src/js/app/models/GetResponses.js"
-			],
-			[
-				"main.scss",
-				"consumer/src/css/main.scss"
-			],
-			[
-				"header",
-				"consumer/src/js/app/views/components/Header.jsx"
 			]
 		],
 		"width": 0.0
@@ -1697,7 +1702,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 258.0,
+	"side_bar_width": 240.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

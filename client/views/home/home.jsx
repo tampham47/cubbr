@@ -23,21 +23,23 @@ HomeTpt = ReactMeteor.createClass({
   },
 
   render: function() {
-    return (
-      <div>
-        <Header/>
-          <p>Site map!</p>
-          <p>
-            <a href="/activ">activ</a><br/>
-            <a href="/activ/new">activ new</a><br/>
-            <a href="/activ/detail">activ detail</a><br/>
-            <br/>
+	return (
+	  	<div>
+			<Header/>
+			<section className="page-content-container page-activities-new">
+				<div className="page-content">
+					<p>Site map!</p>
 
-            <a href="/login">login</a><br/>
-            <a href="/update-profile">update profile</a>
-          </p>
-        <Footer/>
-      </div>
-    );
+					<a href="/activ">activ</a><br/>
+					<a href="/activ/new">activ new</a><br/>
+					<a href="/activ/detail">activ detail</a><br/>
+					<br/>
+
+					<a href="/login">login</a><br/>
+					<a href="/update-profile">update profile</a>
+		  		</div>
+			</section>
+	  	</div>
+	);
   }
 });

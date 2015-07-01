@@ -18,7 +18,7 @@ ActivListTpt = ReactMeteor.createClass({
 		return (
 			<div>
 				<Header type="activities"/>
-				<section className="page-content-container page-login">
+				<section className="page-content-container has-tabs">
 					<Tabs active="activities" />
 					<List />
 				</section>
