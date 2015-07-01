@@ -16,7 +16,7 @@ Header = React.createClass({
 				break;
 			case 'update-profile':
 				this.center = 'Cập nhật thông tin';
-				this.rightSide = (<i className="fa fa-angle-right"></i>);
+				this.rightSide = (<a href="" className="angle-arrow-btn"><i className="fa fa-angle-right"></i></a>);
 				break;
 			case 'activities':
 				this.leftSide = (<a href="/" className="logo">Cubbr</a>);
