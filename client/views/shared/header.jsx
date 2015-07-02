@@ -18,6 +18,10 @@ Header = React.createClass({
 				this.center = 'Cập nhật thông tin';
 				this.rightSide = (<a className="icon icon-right-nav pull-right"></a>);
 				break;
+      case 'posts':
+        this.center = 'Posts';
+        this.leftSide = (<a href="#" className="icon icon-left-nav pull-left"></a>);
+        break;
 			case 'activities':
 				this.leftSide = (<a href="/" className="btn btn-link pull-left">Cubbr</a>);
 				this.rightSide = (<div><a className="icon icon-compose pull-right"></a><a className="icon icon-plus pull-right"></a></div>); // (<div className="action-list"><a href="" className="ib vm"><i className="fa fa-plus"></i></a><a href="" className="ib vm message-btn"><i className="fa fa-comment-o"></i></a></div>);

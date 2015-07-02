@@ -36,7 +36,8 @@ HomeTpt = ReactMeteor.createClass({
 					<br/>
 
 					<a href="/login">login</a><br/>
-					<a href="/update-profile">update profile</a>
+					<a href="/update-profile">update profile</a><br />
+          <a href="/posts">Posts</a>
 		  		</div>
 			</section>
 	  	</div>

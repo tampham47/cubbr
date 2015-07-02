@@ -40,3 +40,8 @@ Router.route('/update-profile', function () {
   this.render('UpdateProfileTpt');
   SEO.set({ title: 'Home - ' + Meteor.App.NAME });
 });
+
+Router.route('/posts', function () {
+  this.render('PostsTpt');
+  SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+});
