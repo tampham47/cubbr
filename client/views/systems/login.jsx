@@ -11,14 +11,14 @@ LoginTpt = ReactMeteor.createClass({
 
 	render: function() {
 		return (
-			<div className="page-wrapper">
-				<Header/>
-				<section className="content page-content-container page-login">
-					<div className="login-wrap flex h-center v-center">
-						<a href="/update-profile" className="login-fb-btn"><i className="fa fa-facebook-square ib vm"></i><span className="ib vm">Facebook</span></a>
+			<div>
+				<Header title="Login"/>
+				<section className="container login-page">
+					<div className="login-block">
+						<h5 className="login-title">Login with</h5>
+						<button className="btn btn-positive btn-block btn-outlined">Facebook</button>
 					</div>
 				</section>
-				{/*<Footer/>*/}
 			</div>
 		);
 	}

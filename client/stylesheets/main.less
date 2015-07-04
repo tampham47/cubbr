@@ -1,18 +1,22 @@
-// Main styles
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&subset=latin,vietnamese);
+// General styles, e. g. for the body tag
+@import 'variables';
 
-@import "helpers";
-@import "variables";
-@import "lib/elements";
-@import "lib/resetcss";
-@import "icons";
+/* -------------------
+  Main Content
+   ------------------- */
 
-@import "_input";
-@import "_global";
-/*
-@import "_tabs";
-@import "_list";
-@import "_header";
-@import "_login";
-@import "_update-profile";
-*/
+.container {
+  position: relative;
+  top: 44px;
+  padding: 10px 10px;
+}
+
+.login-page {
+  .login-block {
+    margin-top: 100px;
+
+    .login-title {
+      text-align: center;
+    }
+  }
+}
