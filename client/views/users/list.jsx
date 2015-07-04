@@ -10,12 +10,13 @@ UsersListTpt = ReactMeteor.createClass({
   render: function() {
     return (
       <div>
-        <Header title="Users" />
+        <Header navActive="3" isHeader="true"
+          plusHref="/topics/new" />
+
         <div className="container content">
-          <ul className="table-view">
-            <li className="table-view-cell table-view-divider">
-              <span className="text-center">Users arround 1.5km</span>
-            </li>
+          <h6 className="small-title">Users arround 0.5km</h6>
+
+          <ul className="table-view table-view-custom user-list">
             <li className="table-view-cell media">
               <a className="navigate-right" href="/users/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
