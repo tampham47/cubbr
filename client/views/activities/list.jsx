@@ -1,4 +1,3 @@
-
 ActivListTpt = ReactMeteor.createClass({
 	templateName: 'ActivListTpt',
 
@@ -16,13 +15,177 @@ ActivListTpt = ReactMeteor.createClass({
 
   render: function() {
 		return (
-			<div className="has-tabs">
-				<Header type="activities"/>
-				<Tabs active="activities" />
-				<section className="content page-content-container">
-					<List />
-				</section>
-			</div>
+			<div>
+        <div className="content">
+          <ul className="table-view">
+            <li className="table-view-cell table-view-divider">
+              <span className="text-center">Activities arround 1.5km</span>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Argo
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Skyfall: 007
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Wreck-it Ralph
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Argo
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Skyfall: 007
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Wreck-it Ralph
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Argo
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Skyfall: 007
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Wreck-it Ralph
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Argo
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Skyfall: 007
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Wreck-it Ralph
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Argo
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Skyfall: 007
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Wreck-it Ralph
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Argo
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Skyfall: 007
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="navigate-right" href="#" data-transition="slide-in">
+                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  Wreck-it Ralph
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 		);
 	}
 });

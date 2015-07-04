@@ -18,17 +18,17 @@ Router.route('/', {
 
 Router.route('/activ', function () {
   this.render('ActivListTpt');
-  SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+  SEO.set({ title: 'Activities List - ' + Meteor.App.NAME });
 });
 
 Router.route('/activ/new', function () {
   this.render('ActivNewTpt');
-  SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+  SEO.set({ title: 'Activity New - ' + Meteor.App.NAME });
 });
 
 Router.route('/activ/detail', function () {
   this.render('ActivDetailTpt');
-  SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+  SEO.set({ title: 'Activity Detail - ' + Meteor.App.NAME });
 });
 
 Router.route('/login', function () {
@@ -44,4 +44,34 @@ Router.route('/update-profile', function () {
 Router.route('/posts', function () {
   this.render('PostsTpt');
   SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+});
+
+Router.route('/users', function () {
+  this.render('UsersListTpt');
+  SEO.set({ title: 'Users List - ' + Meteor.App.NAME });
+});
+
+Router.route('/users/detail', function () {
+  this.render('UsersDetailTpt');
+  SEO.set({ title: 'Users Detail - ' + Meteor.App.NAME });
+});
+
+Router.route('/topics', function () {
+  this.render('TopicsListTpt');
+  SEO.set({ title: 'Topics List - ' + Meteor.App.NAME });
+});
+
+Router.route('/topics/detail', function () {
+  this.render('TopicsListTpt');
+  SEO.set({ title: 'Topics Detail - ' + Meteor.App.NAME });
+});
+
+Router.route('/messages', function () {
+  this.render('MessagesListTpt');
+  SEO.set({ title: 'Messages List - ' + Meteor.App.NAME });
+});
+
+Router.route('/messages/detail', function () {
+  this.render('MessagesDetailTpt');
+  SEO.set({ title: 'Messages Detail - ' + Meteor.App.NAME });
 });
