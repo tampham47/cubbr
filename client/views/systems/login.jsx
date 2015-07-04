@@ -25,9 +25,9 @@ LoginTpt = ReactMeteor.createClass({
 
 	render: function() {
 		return (
-			<div>
+			<div className="small-header">
 				<Header title="Login" isTopNav="false" class="center" />
-				<section className="container login-page">
+				<section className="container wrapper login-page">
 					<div className="login-block">
 						<h5 className="login-title">Login with</h5>
 						<a className="btn btn-positive btn-block btn-outlined"
