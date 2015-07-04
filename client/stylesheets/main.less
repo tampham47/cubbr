@@ -5,6 +5,10 @@
   Main Content
    ------------------- */
 
+html {
+  -ms-touch-action: none;
+}
+
 input[type="text"], input[type="email"],
 input[type="password"], textarea {
   padding-left: 10px;
@@ -48,14 +52,14 @@ header {
   }
 
   .icon {
-    padding-left: @gutter;
-    padding-right: @gutter;
+    padding-left: 5px;
+    padding-right: 5px;
 
     &.rm-left {
-      margin-left: -@gutter;
+      margin-left: -5px;
     }
     &.rm-right {
-      margin-right: -@gutter;
+      margin-right: -5px;
     }
   }
 }
@@ -121,6 +125,11 @@ header {
   &.small-title-topic {
     text-transform: uppercase;
   }
+}
+
+.btn-new-topic {
+  padding: 10px 10px 10px 0;
+  margin-top: -10px;
 }
 
 .table-view.table-view-comment {

@@ -5,15 +5,27 @@ UpdateProfileTpt = ReactMeteor.createClass({
 	startMeteorSubscriptions: function() {
 	},
 
+	// Make sure your component implements this method.
+	getMeteorState: function() {
+	},
+
 	getInitialState: function() {
+		LocationService.getCurrentPosition(function(pos) {
+			console.log('position', pos);
+			this.setState({position: pos});
+		}.bind(this));
+
 		Meteor.call('Users.current', function(err, user) {
 			if (err) {
 				return;
 			}
 
+			console.log('current', user);
+
 			var model = {
-				fullName: user.fullName,
-				email: user.email,
+				fullName: user.fullName || user.services.facebook.name,
+				email: user.email || user.services.facebook.email,
+				phoneNumber: user.phoneNumber,
 				occupation: user.occupation,
 				bio: user.bio
 			};
@@ -22,13 +34,10 @@ UpdateProfileTpt = ReactMeteor.createClass({
 		}.bind(this));
 
     return {
-    	model: {}
+    	model: {},
+    	position: {}
     };
   },
-
-	// Make sure your component implements this method.
-	getMeteorState: function() {
-	},
 
 	handleChange: function(e){
     var model = this.state.model;
@@ -40,24 +49,33 @@ UpdateProfileTpt = ReactMeteor.createClass({
 		var model = {
 			fullName: this.refs.fullName.getDOMNode().value,
 			email: this.refs.email.getDOMNode().value,
+			phoneNumber: this.refs.phoneNumber.getDOMNode().value,
 			occupation: this.refs.occupation.getDOMNode().value,
-			bio: this.refs.bio.getDOMNode().value
+			bio: this.refs.bio.getDOMNode().value,
+			position: this.state.position
 		};
 
+		// console.log('model', model);
 		return model;
 	},
 
 	leftMethod: function() {
+		Router.go('/activ');
 	},
 	rightMethod: function() {
 		var model = this.getModel();
+
+		if ((model.fullName.length === 0) || (model.email.length === 0)) {
+			alert('Full name and email are required!');
+			return;
+		}
+
 		Meteor.call('Users.update', model, function(err, data) {
 			if (err) {
-				// alert('Server error, try again later!');
-				console.log('err', err);
+				alert('Server error, try again later!');
 				return;
 			}
-			console.log('update', data);
+			// console.log('update', data);
 			Router.go('/activ');
 		});
 	},
@@ -74,11 +92,14 @@ UpdateProfileTpt = ReactMeteor.createClass({
 
 				<section className="container wrapper">
 					<form class="input-group">
-						<input type="text" ref="fullName" placeholder="full name"
+						<input type="text" ref="fullName" placeholder="*full name"
 							value={this.state.model.fullName}
 							onChange={this.handleChange}/>
-						<input type="email" ref="email" placeholder="email"
+						<input type="email" ref="email" placeholder="*email"
 							value={this.state.model.email}
+							onChange={this.handleChange}/>
+						<input type="text" ref="phoneNumber" placeholder="phone number"
+							value={this.state.model.phoneNumber}
 							onChange={this.handleChange}/>
 						<input type="text" ref="occupation" placeholder="occupation"
 							value={this.state.model.occupation}

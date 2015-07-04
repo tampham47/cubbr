@@ -40,7 +40,7 @@ Header = React.createClass({
           <h1 className="title">{(this.props.title!=null?this.props.title:"Cubbr")}</h1>
 
           <a href="#"
-            className={"icon icon-download pull-right rm-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
+            className={"icon icon-caret pull-right rm-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
           <a href={this.props.plusHref}
             className={"icon icon-plus pull-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
 
