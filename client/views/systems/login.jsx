@@ -16,7 +16,7 @@ LoginTpt = ReactMeteor.createClass({
 				<section className="container login-page">
 					<div className="login-block">
 						<h5 className="login-title">Login with</h5>
-						<button className="btn btn-positive btn-block btn-outlined">Facebook</button>
+						<a href="/update-profile" className="btn btn-positive btn-block btn-outlined">Facebook</a>
 					</div>
 				</section>
 			</div>
