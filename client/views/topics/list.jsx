@@ -12,10 +12,13 @@ TopicsListTpt = ReactMeteor.createClass({
     return (
       <div>
         <Header navActive="2" isHeader="true"
-          plusHref="/topics/new" />
+          plusHref="/activ/new" />
 
         <div className="container content">
-          <h6 className="small-title">Topics arround 0.5km</h6>
+          <h6 className="small-title">
+            Topics arround 0.5km
+            <a href="/topics/new" className="btn-new-topic pull-right">NEW TOPIC</a>
+          </h6>
 
           <ul className="table-view table-view-topic topic-list">
             <li className="table-view-cell media">
