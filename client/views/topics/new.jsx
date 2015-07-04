@@ -10,8 +10,13 @@ TopicNewTpt = ReactMeteor.createClass({
   },
 
   getInitialState: function() {
+    LocationService.getCurrentPosition(function(pos) {
+      this.setState({position: pos});
+    }.bind(this));
+
     return {
-      model: {}
+      model: {},
+      position: {}
     };
   },
 
@@ -23,7 +28,8 @@ TopicNewTpt = ReactMeteor.createClass({
 
   getModel: function() {
     var model = {
-      topicName: this.refs.topicName.getDOMNode().value
+      topicName: this.refs.topicName.getDOMNode().value,
+      position: this.state.position
     };
 
     return model;
@@ -33,7 +39,10 @@ TopicNewTpt = ReactMeteor.createClass({
     Router.go('/topics');
   },
   rightMethod: function() {
-    Meteor.call('', this.getModel(), function(err, result) {
+    var model = this.getModel();
+    console.log('this.getModel', model);
+    Meteor.call('Topics.create', this.getModel(), function(err, result) {
+      console.log('result', result);
       Router.go('/topics');
     });
   },

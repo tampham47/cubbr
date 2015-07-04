@@ -4,16 +4,14 @@ Topics = new Mongo.Collection('Topics');
 
 Meteor.methods({
   'Topics.create': function(topicAttributes) {
-    console.log('Topics.create');
+    check(topicAttributes, Object);
+
     var topic = _.extend(topicAttributes, {
       userId: Meteor.user()._id,
-      username: Meteor.user().profile.name,
-      postedDate: new Date(),
-      topicName: topicAttributes.title,
+      postedDate: new Date()
     });
 
     var topicId = Topics.insert(topic);
-
     return topicId;
   },
 
