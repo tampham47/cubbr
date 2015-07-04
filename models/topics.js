@@ -24,6 +24,7 @@ Meteor.methods({
   },
 
   'Topics.getById': function (topicId) {
-    return Topics.find({_id: topicId});
+    check(topicId, String);
+    return Topics.findOne({_id: topicId});
   }
 });

@@ -27,7 +27,8 @@ TopicsListTpt = ReactMeteor.createClass({
       topicListRender = this.state.topicList.map(function(item, i) {
         return (
           <li className="table-view-cell media">
-            <a className="navigate-right" href="/topics/detail" data-transition="slide-in">
+            <a className="navigate-right" href={"/topics/detail/" + item._id}
+              data-transition="slide-in">
               <div className="media-body">{item.topicName}</div>
             </a>
           </li>
