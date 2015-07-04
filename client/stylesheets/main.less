@@ -14,11 +14,17 @@ input[type="password"], textarea {
 body {
   position: static;
   color: black;
+
+  * {
+    color: black;
+  }
 }
 
 h6 {
   margin-top: 0;
   padding-left: @gutter;
+  font-weight: bold;
+  color: black;
 }
 
 header, .segmented-control {
@@ -74,6 +80,12 @@ header {
   }
 }
 
+.small-header {
+  .container {
+    top: 44px;
+  }
+}
+
 .wrapper {
   padding-left: @gutter;
   padding-right: @gutter;
@@ -103,6 +115,70 @@ header {
   }
 }
 
+.table-view.table-view-comment {
+  border-top: 0;
+  border-bottom: 0;
+
+  li {
+    padding: 5px @gutter;
+
+    .media-object {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.user-block {
+  margin-bottom: 5px;
+
+  .user-fullname {
+    text-transform: uppercase;
+  }
+
+  .user-occupation {
+  }
+}
+
+.activ-block {
+  .activ-content {
+    font-size: 14px;
+  }
+
+  .activ-date {
+    text-align: right;
+  }
+}
+
 .comment-list {
   margin-top: @gutter;
+
+  .cmt-title {
+    font-size: 14px;
+  }
+
+  .cmt-content {
+    font-size: 13px;
+  }
+}
+
+.input-group {
+  position: relative;
+  padding: 5px 10px;
+
+  .input-content {
+    padding-right: 60px;
+    padding-left: 0;
+    border: 0;
+    background-image: none;
+  }
+
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

@@ -43,7 +43,7 @@ ActivNewTpt = ReactMeteor.createClass({
 
 	render: function() {
 		return (
-			<div>
+			<div className="small-header">
         <Header title="New Activities"
           isTopNav="false"
           class="center"
