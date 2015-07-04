@@ -12,8 +12,10 @@ ActivNewTpt = ReactMeteor.createClass({
   },
 
   getInitialState: function() {
+    var currentTopic = Session.get('currentTopic');
     return {
-      model: {}
+      model: {},
+      topicId: currentTopic._id
     };
   },
 
@@ -27,7 +29,8 @@ ActivNewTpt = ReactMeteor.createClass({
   getModel: function() {
     var model = {
       content: this.refs.content.getDOMNode().value,
-      topicName: this.refs.topicName.getDOMNode().value
+      topicName: this.refs.topicName.getDOMNode().value,
+      topicId: this.state.topicId
     };
     console.log('model: ', model);
     return model;

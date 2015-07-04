@@ -9,6 +9,7 @@ Meteor.publish('Activities.getByLocation', function() {
   return Activities.find({});
 });
 
-Meteor.publish('Activities.getByTopic', function() {
-  return Activities.find({});
+Meteor.publish('Activities.getByTopic', function(topicId) {
+  check(topicId, String);
+  return Activities.find({topicId: topicId});
 });
