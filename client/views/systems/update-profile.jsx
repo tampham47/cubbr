@@ -6,7 +6,21 @@ UpdateProfileTpt = ReactMeteor.createClass({
 	},
 
 	getInitialState: function() {
-		console.log('user', Meteor.user());
+		Meteor.call('Users.current', function(err, user) {
+			if (err) {
+				return;
+			}
+
+			var model = {
+				fullName: user.fullName,
+				email: user.email,
+				occupation: user.occupation,
+				bio: user.bio
+			};
+
+			this.setState({model: model});
+		}.bind(this));
+
     return {
     	model: {}
     };

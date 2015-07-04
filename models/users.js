@@ -20,5 +20,9 @@ Meteor.methods({
     );
 
     return Meteor.user();
+  },
+
+  'Users.current': function() {
+    return Meteor.user();
   }
 });
