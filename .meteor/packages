@@ -25,3 +25,5 @@ meteorhacks:fast-render
 semantic:ui-css
 reactjs:react
 accounts-ui
+accounts-facebook
+service-configuration
