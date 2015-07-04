@@ -25,7 +25,7 @@ UsersListTpt = ReactMeteor.createClass({
       userItems = this.state.userList.map(function(item, i) {
         return (
           <li className="table-view-cell media">
-            <a className="navigate-right" href="/users/detail" data-transition="slide-in">
+            <a className="navigate-right" href={"/users/detail/" + item._id} data-transition="slide-in">
               <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
               <div className="media-body">
                 {item.fullName}
