@@ -37,7 +37,11 @@ ActivNewTpt = ReactMeteor.createClass({
   },
 
 	leftMethod: function() {
-    Router.go('/activ');
+    if (this.state.topicId != undefined) {
+      Router.go('/topics/detail/' + this.state.topicId);
+    } else {
+      Router.go('/activ');
+    }
   },
   rightMethod: function() {
     Meteor.call('Activities.create', this.getModel(), function (err, result) {
