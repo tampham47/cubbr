@@ -5,6 +5,11 @@ UpdateProfileTpt = ReactMeteor.createClass({
 	startMeteorSubscriptions: function() {
 	},
 
+	getInitialState: function(){
+		console.log('user', Meteor.user());
+    return {};
+  },
+
 	// Make sure your component implements this method.
 	getMeteorState: function() {
 	},
