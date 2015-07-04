@@ -16,7 +16,7 @@ MessagesListTpt = ReactMeteor.createClass({
               <span className="text-center">History</span>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tan Nguyen
@@ -25,7 +25,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tam Pham
@@ -34,7 +34,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Phuc Kieu
@@ -43,7 +43,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tan Nguyen
@@ -52,7 +52,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tam Pham
@@ -61,7 +61,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Phuc Kieu
@@ -70,7 +70,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tan Nguyen
@@ -79,7 +79,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tam Pham
@@ -88,7 +88,7 @@ MessagesListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Phan Kieu

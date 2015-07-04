@@ -22,7 +22,7 @@ ActivListTpt = ReactMeteor.createClass({
               <span className="text-center">Activities arround 1.5km</span>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Argo
@@ -31,7 +31,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Skyfall: 007
@@ -40,7 +40,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Wreck-it Ralph
@@ -49,7 +49,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Argo
@@ -58,7 +58,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Skyfall: 007
@@ -67,7 +67,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Wreck-it Ralph
@@ -76,7 +76,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Argo
@@ -85,7 +85,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Skyfall: 007
@@ -94,7 +94,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Wreck-it Ralph
@@ -103,7 +103,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Argo
@@ -112,7 +112,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Skyfall: 007
@@ -121,7 +121,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Wreck-it Ralph
@@ -130,7 +130,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Argo
@@ -139,7 +139,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Skyfall: 007
@@ -148,7 +148,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Wreck-it Ralph
@@ -157,7 +157,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Argo
@@ -166,7 +166,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Skyfall: 007
@@ -175,7 +175,7 @@ ActivListTpt = ReactMeteor.createClass({
               </a>
             </li>
             <li className="table-view-cell media">
-              <a className="navigate-right" href="#" data-transition="slide-in">
+              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
                 <div className="media-body">
                   Wreck-it Ralph

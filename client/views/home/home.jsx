@@ -30,14 +30,14 @@ HomeTpt = ReactMeteor.createClass({
 				<div className="page-content">
 					<p>Site map!</p>
 
-					<a href="/activ">activ</a><br/>
-					<a href="/activ/new">activ new</a><br/>
-					<a href="/activ/detail">activ detail</a><br/>
-					<br/>
-
-					<a href="/login">login</a><br/>
+					<a href="/login">Login</a><br/>
 					<a href="/update-profile">update profile</a><br />
-          <a href="/posts">Posts</a>
+
+          <br /><br />
+          <a href="/activ">Activities</a><br />
+          <a href="/topics">Topics</a><br />
+          <a href="/users">Users</a><br />
+          <a href="/messages">Messages</a><br />
 		  		</div>
 			</section>
 	  	</div>
