@@ -8,6 +8,15 @@ ActivDetailTpt = ReactMeteor.createClass({
   getMeteorState: function() {
   },
 
+  getInitialState: function () {
+    var user = {};
+    Meteor.call('Users.getCurrent', function (err, result) {
+      console.log(result);
+      user = result;
+    });
+    return user;
+  },
+
   render: function() {
     return (
       <div>
