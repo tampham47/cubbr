@@ -25,7 +25,7 @@ ActivListTpt = ReactMeteor.createClass({
       listItem = this.state.activList.map(function (item, i) {
         return (
           <li className="table-view-cell media">
-            <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
+            <a className="navigate-right" href={"/activ/detail/" + item._id} data-transition="slide-in">
               <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
               <div className="media-body">
                 {item.username}
