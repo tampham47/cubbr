@@ -11,7 +11,8 @@ Router.onBeforeAction(function() {
 Router.route('/', {
   name: 'HomeTpt',
   action: function () {
-    this.render('HomeTpt');
+    // this.render('HomeTpt');
+    this.render('ActivListTpt');
     SEO.set({ title: 'Home - ' + Meteor.App.NAME });
   }
 });

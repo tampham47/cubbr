@@ -45,15 +45,6 @@ ActivListTpt = ReactMeteor.createClass({
           <h6 className="small-title">Activities arround 1.5km</h6>
           <ul className="table-view">
             {listItem}
-            <li className="table-view-cell media">
-              <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
-                <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />
-                <div className="media-body">
-                  XXX
-                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
-              </a>
-            </li>
           </ul>
         </div>
       </div>

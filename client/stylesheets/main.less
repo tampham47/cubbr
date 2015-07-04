@@ -5,6 +5,10 @@
   Main Content
    ------------------- */
 
+html {
+  // -ms-touch-action: none;
+}
+
 input[type="text"], input[type="email"],
 input[type="password"], textarea {
   padding-left: 10px;
@@ -25,6 +29,10 @@ h6 {
   padding-left: @gutter;
   font-weight: bold;
   color: black;
+
+  &.user-bio-title {
+    padding-left: 0;
+  }
 }
 
 header, .segmented-control {
@@ -44,14 +52,14 @@ header {
   }
 
   .icon {
-    padding-left: @gutter;
-    padding-right: @gutter;
+    padding-left: 5px;
+    padding-right: 5px;
 
     &.rm-left {
-      margin-left: -@gutter;
+      margin-left: -5px;
     }
     &.rm-right {
-      margin-right: -@gutter;
+      margin-right: -5px;
     }
   }
 }
@@ -119,6 +127,11 @@ header {
   }
 }
 
+.btn-new-topic {
+  padding: 10px 10px 10px 0;
+  margin-top: -10px;
+}
+
 .table-view.table-view-comment {
   border-top: 0;
   border-bottom: 0;
@@ -180,10 +193,11 @@ header {
   .btn {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 0;
     width: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
   }
 }
 
@@ -199,5 +213,32 @@ header {
     background-image: none;
     border-bottom: 1px solid whitesmoke;
     // padding-left: 10px;
+  }
+}
+
+.user-list {
+  .table-view-cell {
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .media-object {
+    width: 40px;
+
+  }
+}
+
+.user-info-list, .user-message-list {
+  .table-view-cell {
+    padding-right: @gutter;
+  }
+}
+
+.user-message-list {
+  .table-view-cell {
+    a {
+      margin-right: -10px;
+    }
   }
 }
