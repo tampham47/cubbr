@@ -6,6 +6,9 @@ ActivListTpt = ReactMeteor.createClass({
 	},
 
   getInitialState: function() {
+    //
+    Session.set('currentTopic', null);
+
     return {
       activList: []
     };

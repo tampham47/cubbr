@@ -12,10 +12,11 @@ ActivNewTpt = ReactMeteor.createClass({
   },
 
   getInitialState: function() {
-    var currentTopic = Session.get('currentTopic');
+    var currentTopic = Session.get('currentTopic') || {};
     return {
       model: {},
-      topicId: currentTopic._id
+      topicId: currentTopic._id,
+      topic: currentTopic
     };
   },
 
@@ -42,8 +43,13 @@ ActivNewTpt = ReactMeteor.createClass({
   rightMethod: function() {
     Meteor.call('Activities.create', this.getModel(), function (err, result) {
       console.log('result: ', result);
-      Router.go('/activ');
-    });
+
+      if (this.state.topicId != undefined) {
+        Router.go('/topics/detail/' + this.state.topicId);
+      } else {
+        Router.go('/activ');
+      }
+    }.bind(this));
   },
 
 	render: function() {

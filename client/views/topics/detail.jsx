@@ -8,9 +8,7 @@ TopicsDetailTpt = ReactMeteor.createClass({
 
   getMeteorState: function() {
     var topicId = Router.current().params.id;
-    // var activList = Activities.find({topicId: topicId}).fetch();
     var activList = Activities.find({}).fetch();
-    console.log('activList', activList);
     return {
       activList: activList
     };

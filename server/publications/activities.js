@@ -6,7 +6,7 @@ Meteor.publish('Activities.getAll', function() {
 });
 
 Meteor.publish('Activities.getByLocation', function() {
-  return Activities.find({});
+  return Activities.find({topicId: null});
 });
 
 Meteor.publish('Activities.getByTopic', function(topicId) {
