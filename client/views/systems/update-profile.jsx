@@ -11,7 +11,8 @@ UpdateProfileTpt = ReactMeteor.createClass({
 
 	getInitialState: function() {
 		LocationService.getCurrentPosition(function(pos) {
-			this.setState({position: position});
+			console.log('position', pos);
+			this.setState({position: pos});
 		}.bind(this));
 
 		Meteor.call('Users.current', function(err, user) {
@@ -33,8 +34,8 @@ UpdateProfileTpt = ReactMeteor.createClass({
 		}.bind(this));
 
     return {
-    	model: {
-    	}
+    	model: {},
+    	position: {}
     };
   },
 
@@ -45,16 +46,14 @@ UpdateProfileTpt = ReactMeteor.createClass({
   },
 
 	getModel: function() {
-		console.log('this.model', this.state.model);
-
-		var model = _.extend(this.state.model, {
+		var model = {
 			fullName: this.refs.fullName.getDOMNode().value,
 			email: this.refs.email.getDOMNode().value,
 			phoneNumber: this.refs.phoneNumber.getDOMNode().value,
 			occupation: this.refs.occupation.getDOMNode().value,
 			bio: this.refs.bio.getDOMNode().value,
 			position: this.state.position
-		});
+		};
 
 		console.log('model', model);
 		return model;

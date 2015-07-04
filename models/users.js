@@ -5,11 +5,13 @@ Meteor.methods({
   },
 
   'Users.getCurrent': function() {
-    console.log('Users.getCurrent', Meteor.user());
+    return Meteor.user();
   },
 
   'Users.update': function(data) {
     check(data, Object);
+
+    console.log('user data', data);
 
     var user = Meteor.user();
     Meteor.users.update(
