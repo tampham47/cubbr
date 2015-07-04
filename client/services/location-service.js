@@ -8,7 +8,6 @@ LocationService = {
         longitude: pos.coords.longitude,
         timestamp: pos.timestamp
       };
-      console.log('location', position, pos);
       cback && cback(position);
     });
   }

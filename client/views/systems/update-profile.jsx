@@ -55,7 +55,7 @@ UpdateProfileTpt = ReactMeteor.createClass({
 			position: this.state.position
 		};
 
-		console.log('model', model);
+		// console.log('model', model);
 		return model;
 	},
 
@@ -75,7 +75,7 @@ UpdateProfileTpt = ReactMeteor.createClass({
 				alert('Server error, try again later!');
 				return;
 			}
-			console.log('update', data);
+			// console.log('update', data);
 			Router.go('/activ');
 		});
 	},
