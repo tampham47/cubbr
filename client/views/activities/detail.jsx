@@ -53,10 +53,11 @@ ActivDetailTpt = ReactMeteor.createClass({
               </li>
             </ul>
 
-            <form className="wrapper">
-              <div class="input-group">
-                <input type="text" name="comment" placeholder="What do you think about this?" />
-                <button className="btn btn-positive btn-block">SEND</button>
+            <form>
+              <div className="input-group">
+                <input type="text" name="comment" className="input-content"
+                  placeholder="What do you think about this?" />
+                <button className="btn btn-positive">SEND</button>
               </div>
             </form>
           </div>
