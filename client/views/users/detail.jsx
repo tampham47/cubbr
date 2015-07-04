@@ -10,12 +10,12 @@ UsersDetailTpt = ReactMeteor.createClass({
   render: function() {
     return (
       <div>
-        <Header title="Users" />
+        <Header navActive="3" isHeader="true"
+          plusHref="/topics/new" />
+
         <div className="container content">
-          <ul className="table-view">
-            <li className="table-view-cell table-view-divider">
-              <span className="text-center">Users Information</span>
-            </li>
+          <h6 className="small-title">Users information</h6>
+          <ul className="table-view table-view-custom user-info-list">
             <li className="table-view-cell media">
               <span className="media-object pull-left icon icon-person"></span>
               <div className="media-body">
@@ -34,8 +34,14 @@ UsersDetailTpt = ReactMeteor.createClass({
                 01642922011
               </div>
             </li>
+            <li className="table-view-cell media">
+              <h6 className="user-bio-title">bio</h6>
+              <p className="user-bio-content">Mình là tư, mình yêu màu tím, thích màu hường</p>
+            </li>
           </ul>
-          <button className="btn btn-positive btn-block btn-outlined">Send a message</button>
+          <div className="wrapper">
+            <button className="btn btn-positive btn-block btn-outlined">Send a message</button>
+          </div>
         </div>
       </div>
     );
