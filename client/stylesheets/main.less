@@ -184,10 +184,11 @@ header {
   .btn {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 0;
     width: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
   }
 }
 
@@ -219,8 +220,16 @@ header {
   }
 }
 
-.user-info-list {
+.user-info-list, .user-message-list {
   .table-view-cell {
     padding-right: @gutter;
+  }
+}
+
+.user-message-list {
+  .table-view-cell {
+    a {
+      margin-right: -10px;
+    }
   }
 }
