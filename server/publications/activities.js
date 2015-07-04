@@ -11,6 +11,5 @@ Meteor.publish('Activities.getByLocation', function() {
 
 Meteor.publish('Activities.getByTopic', function(topicId) {
   check(topicId, String);
-  // return Activities.find({topicId: topicId});
-  return Activities.find({});
+  return Activities.find({topicId: topicId});
 });
