@@ -26,7 +26,7 @@ LoginTpt = ReactMeteor.createClass({
 	render: function() {
 		return (
 			<div>
-				<Header title="Login"/>
+				<Header title="Login" isTopNav="false" class="center" />
 				<section className="container login-page">
 					<div className="login-block">
 						<h5 className="login-title">Login with</h5>

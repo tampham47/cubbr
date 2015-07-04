@@ -51,7 +51,10 @@ UpdateProfileTpt = ReactMeteor.createClass({
 	render: function() {
 		return (
 			<div>
-				<Header title="Update Profile" left='' right=''
+				<Header title="Update Profile"
+					isTopNav="false"
+					class="center"
+					left="" right=""
 					leftMethod={this.leftMethod}
 					rightMethod={this.rightMethod}/>
 
