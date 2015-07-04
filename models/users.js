@@ -8,6 +8,11 @@ Meteor.methods({
     return Meteor.user();
   },
 
+  'Users.getById': function(userId) {
+    check(userId, String);
+    return Meteor.users.findOne({_id: userId});
+  },
+
   'Users.update': function(data) {
     check(data, Object);
 

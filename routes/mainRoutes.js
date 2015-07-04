@@ -52,7 +52,7 @@ Router.route('/users', function () {
   SEO.set({ title: 'Users List - ' + Meteor.App.NAME });
 });
 
-Router.route('/users/detail', function () {
+Router.route('/users/detail/:id', function () {
   this.render('UsersDetailTpt');
   SEO.set({ title: 'Users Detail - ' + Meteor.App.NAME });
 });
@@ -68,7 +68,6 @@ Router.route('/topics/new', function () {
 });
 
 Router.route('/topics/detail/:id', function () {
-  console.log('this.params', this.params);
   this.render('TopicsDetailTpt');
   SEO.set({ title: 'Topics Detail - ' + Meteor.App.NAME });
 });
@@ -78,7 +77,7 @@ Router.route('/messages', function () {
   SEO.set({ title: 'Messages List - ' + Meteor.App.NAME });
 });
 
-Router.route('/messages/detail', function () {
+Router.route('/messages/detail/:id', function () {
   this.render('MessagesDetailTpt');
   SEO.set({ title: 'Messages Detail - ' + Meteor.App.NAME });
 });
