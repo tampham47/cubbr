@@ -39,7 +39,10 @@ header, .segmented-control {
   z-index: 3;
 }
 
-header {
+header.bar {
+  background-color: #b92b27;
+  border-bottom: 0;
+
   &.center {
     .title {
       text-align: center;
@@ -49,11 +52,13 @@ header {
   .title {
     padding-left: 10px;
     text-align: left;
+    color: white;
   }
 
   .icon {
     padding-left: 5px;
     padding-right: 5px;
+    color: white;
 
     &.rm-left {
       margin-left: -5px;
@@ -67,8 +72,9 @@ header {
 .segmented-control {
   position: fixed;
   top: 44px;
-  border-bottom: 4px solid whitesmoke;
+  border: 0;
   border-radius: 0;
+  border-bottom: 4px solid whitesmoke;
 
   .control-item {
     padding-top: 12px;

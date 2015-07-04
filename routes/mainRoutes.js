@@ -77,7 +77,7 @@ Router.route('/messages', function () {
   SEO.set({ title: 'Messages List - ' + Meteor.App.NAME });
 });
 
-Router.route('/messages/detail', function () {
+Router.route('/messages/detail/:id', function () {
   this.render('MessagesDetailTpt');
   SEO.set({ title: 'Messages Detail - ' + Meteor.App.NAME });
 });
