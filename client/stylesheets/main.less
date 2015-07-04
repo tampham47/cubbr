@@ -11,6 +11,28 @@ input[type="password"], textarea {
   padding-right: 10px;
 }
 
+header {
+  .title {
+    padding-left: 10px;
+
+    &.left {
+      text-align: left;
+    }
+  }
+
+  .icon {
+    padding-left: @gutter;
+    padding-right: @gutter;
+
+    &.rm-left {
+      margin-left: -@gutter;
+    }
+    &.rm-right {
+      margin-right: -@gutter;
+    }
+  }
+}
+
 .container {
   position: relative;
   top: 44px;
@@ -28,5 +50,15 @@ input[type="password"], textarea {
     .login-title {
       text-align: center;
     }
+  }
+}
+
+.segmented-control {
+  position: relative;
+  top: 44px;
+
+  .control-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }

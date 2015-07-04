@@ -15,21 +15,39 @@ Header = React.createClass({
     var type = this.props.type;
 
     return (
-      <header className={"bar bar-nav header " + (this.props.class)}>
-        <h1 className="title">{this.props.title}</h1>
+      <div>
+        <header className={"bar bar-nav header " + (this.props.class)}>
+          {/*<h1 className="title">{this.props.title}</h1>*/}
+          <h1 className="title left">Cubbr</h1>
 
-        <a href="#"
-          className={"icon icon-download pull-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
-        <a href="#"
-          className={"icon icon-plus pull-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
+          <a href="#"
+            className={"icon icon-download pull-right rm-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
+          <a href="#"
+            className={"icon icon-plus pull-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
 
-        <a href="#"
-          className={"icon icon-close pull-left " + (this.props.left!=null?"":"hidden")}
-          onClick={this.props.leftMethod}></a>
-        <a href="#"
-          className={"icon icon-right-nav pull-right " + (this.props.right!=null?"":"hidden")}
-          onClick={this.props.rightMethod}></a>
-      </header>
+          <a href="#"
+            className={"icon icon-close pull-left rm-left " + (this.props.left!=null?"":"hidden")}
+            onClick={this.props.leftMethod}></a>
+          <a href="#"
+            className={"icon icon-right-nav pull-right rm-right " + (this.props.right!=null?"":"hidden")}
+            onClick={this.props.rightMethod}></a>
+        </header>
+
+        <div className="segmented-control">
+          <a className="control-item active" href="/activ">
+            Activities
+          </a>
+          <a className="control-item" href="/topics">
+            Topics
+          </a>
+          <a className="control-item" href="/users">
+            Users
+          </a>
+          <a className="control-item" href="/histories">
+            Histories
+          </a>
+        </div>
+      </div>
     );
   }
 });
