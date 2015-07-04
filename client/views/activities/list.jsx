@@ -16,12 +16,15 @@ ActivListTpt = ReactMeteor.createClass({
   render: function() {
 		return (
 			<div>
-        <Header title="Activities" />
+        <Header navActive="1" isHeader="true"
+          plusHref="/activ/new" />
         <div className="container content">
+          {/*<li className="table-view-cell table-view-divider">
+                      <span className="text-center">Activities arround 1.5km</span>
+                    </li>*/}
+          <h6 className="small-title">Activities arround 1.5km</h6>
+
           <ul className="table-view">
-            <li className="table-view-cell table-view-divider">
-              <span className="text-center">Activities arround 1.5km</span>
-            </li>
             <li className="table-view-cell media">
               <a className="navigate-right" href="/activ/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_64x64.png" alt="Placeholder" />

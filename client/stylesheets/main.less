@@ -11,6 +11,19 @@ input[type="password"], textarea {
   padding-right: 10px;
 }
 
+body {
+  position: static;
+}
+
+h6 {
+  margin-top: 0;
+  padding-left: @gutter;
+}
+
+header, .segmented-control {
+  z-index: 3;
+}
+
 header {
   &.center {
     .title {
@@ -36,10 +49,21 @@ header {
   }
 }
 
+.segmented-control {
+  position: fixed;
+  top: 44px;
+  border-bottom: 4px solid whitesmoke;
+  border-radius: 0;
+
+  .control-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
 .container {
   position: relative;
-  top: 44px;
-  // padding: 10px 10px;
+  top: 84px;
   padding: 10px 0;
 
   ul {
@@ -47,6 +71,11 @@ header {
       margin-top: 0;
     }
   }
+}
+
+.wrapper {
+  padding-left: @gutter;
+  padding-right: @gutter;
 }
 
 .hidden {
@@ -60,15 +89,5 @@ header {
     .login-title {
       text-align: center;
     }
-  }
-}
-
-.segmented-control {
-  position: relative;
-  top: 44px;
-
-  .control-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
   }
 }
