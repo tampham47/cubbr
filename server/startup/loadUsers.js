@@ -14,7 +14,7 @@ Meteor.startup(function () {
   // }
 
   ServiceConfiguration.configurations.upsert(
-    // production confi
+    // production config
     {service: 'facebook'},
     {
       $set: {

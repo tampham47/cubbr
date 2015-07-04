@@ -1,12 +1,12 @@
 //
 
-// Router.onBeforeAction(function() {
-//   if (!Meteor.userId()) {
-//     this.render('ActivListTpt');
-//   } else {
-//     this.next();
-//   }
-// });
+Router.onBeforeAction(function() {
+  if (!Meteor.userId()) {
+    this.render('LoginTpt');
+  } else {
+    this.next();
+  }
+});
 
 Router.route('/', {
   name: 'HomeTpt',
@@ -61,8 +61,13 @@ Router.route('/topics', function () {
   SEO.set({ title: 'Topics List - ' + Meteor.App.NAME });
 });
 
+Router.route('/topics/new', function () {
+  this.render('TopicNewTpt');
+  SEO.set({ title: 'Topics List - ' + Meteor.App.NAME });
+});
+
 Router.route('/topics/detail', function () {
-  this.render('TopicsListTpt');
+  this.render('TopicsDetailTpt');
   SEO.set({ title: 'Topics Detail - ' + Meteor.App.NAME });
 });
 

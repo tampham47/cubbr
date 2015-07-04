@@ -18,17 +18,17 @@ Header = React.createClass({
     if (this.props.isTopNav !== "false") {
       topNav = (
         <div className="segmented-control">
-          <a className="control-item active" href="/activ">
-            Activities
+          <a className={"control-item " + (this.props.navActive==="1"?"active":"")}
+            href="/activ">Activities
           </a>
-          <a className="control-item" href="/topics">
-            Topics
+          <a className={"control-item " + (this.props.navActive==="2"?"active":"")}
+            href="/topics">Topics
           </a>
-          <a className="control-item" href="/users">
-            Users
+          <a className={"control-item " + (this.props.navActive==="3"?"active":"")}
+            href="/users">Users
           </a>
-          <a className="control-item" href="/histories">
-            Histories
+          <a className={"control-item " + (this.props.navActive==="4"?"active":"")}
+            href="/histories">Histories
           </a>
         </div>
       );
@@ -37,12 +37,11 @@ Header = React.createClass({
     return (
       <div>
         <header className={"bar bar-nav header " + (this.props.class)}>
-          {/*<h1 className="title">{this.props.title}</h1>*/}
           <h1 className="title">{(this.props.title!=null?this.props.title:"Cubbr")}</h1>
 
           <a href="#"
             className={"icon icon-download pull-right rm-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
-          <a href="#"
+          <a href={this.props.plusHref}
             className={"icon icon-plus pull-right " + (this.props.isHeader==="true"?"":"hidden")}></a>
 
           <a href="#"
@@ -58,9 +57,3 @@ Header = React.createClass({
     );
   }
 });
-
-// <a href="#" className={"icon icon-left-nav pull-left" + (this.props.back==="true"?"":"hidden")}></a>
-// <a href="#" className={"icon icon-close pull-left" + (this.props.leftState==="cancel"?"":"hidden")}></a>
-// <a href="javascript:;" onClick={this.rightAction} className={"icon icon-check pull-right " + (this.props.rightState==="publish"?"":"hidden")}></a>
-// <a href={this.props.link} className={"icon icon-plus pull-right " + (this.props.state==="new"?"":"hidden")}></a>
-// <a href={this.props.link} className={"icon icon-list pull-right " + (this.props.filter==="true"?"":"hidden")}></a>

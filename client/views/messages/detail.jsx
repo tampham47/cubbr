@@ -10,28 +10,64 @@ MessagesDetailTpt = ReactMeteor.createClass({
   render: function() {
     return (
       <div>
-        <Header title="Messages" />
+        <Header navActive="4" isHeader="true"
+          plusHref="/topics/new" />
+
         <div className="container content">
-          <ul className="table-view">
-            <li className="table-view-cell table-view-divider">Content</li>
+          <h6 className="small-title">Messages</h6>
+          <ul className="table-view table-view-custom user-list user-message-list">
             <li className="table-view-cell media">
-              <img className="media-object pull-left" src="../images/thumbnail_48x48.png" alt="Placeholder" />
-              <div className="media-body">
-                Tan Nguyen
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-              </div>
+              <a className="" href="/messages/detail" data-transition="slide-in">
+                <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
+                <div className="media-body">
+                  Tan Nguyen
+                  <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                </div>
+              </a>
             </li>
             <li className="table-view-cell media">
-              <img className="media-object pull-left" src="../images/thumbnail_48x48.png" alt="Placeholder" />
-              <div className="media-body">
-                Tam Pham
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-              </div>
+              <a className="" href="/messages/detail" data-transition="slide-in">
+                <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
+                <div className="media-body">
+                  Tam Pham
+                  <p>Javascript Developer</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="" href="/messages/detail" data-transition="slide-in">
+                <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
+                <div className="media-body">
+                  Phuc Kieu
+                  <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="" href="/messages/detail" data-transition="slide-in">
+                <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
+                <div className="media-body">
+                  Tan Nguyen
+                  <p>Javascript Developer</p>
+                </div>
+              </a>
+            </li>
+            <li className="table-view-cell media">
+              <a className="" href="/messages/detail" data-transition="slide-in">
+                <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
+                <div className="media-body">
+                  Tam Pham
+                  <p>Javascript Developer</p>
+                </div>
+              </a>
             </li>
           </ul>
           <form>
-            <input type="text" name="comment" placeholder="Write a message..." />
-            <button className="btn btn-positive btn-block">SEND</button>
+            <div className="input-group">
+              <input type="text" name="comment" className="input-content"
+                placeholder="What do you think about this?" />
+              <button className="btn btn-positive">SEND</button>
+            </div>
           </form>
         </div>
       </div>

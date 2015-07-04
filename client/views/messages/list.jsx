@@ -10,12 +10,12 @@ MessagesListTpt = ReactMeteor.createClass({
   render: function() {
     return (
       <div>
-        <Header title="Messages" />
+        <Header navActive="4" isHeader="true"
+          plusHref="/topics/new" />
+
         <div className="container content">
-          <ul className="table-view">
-            <li className="table-view-cell table-view-divider">
-              <span className="text-center">History</span>
-            </li>
+          <h6 className="small-title">Histories</h6>
+          <ul className="table-view table-view-custom user-list">
             <li className="table-view-cell media">
               <a className="navigate-right" href="/messages/detail" data-transition="slide-in">
                 <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />

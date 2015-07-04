@@ -64,7 +64,7 @@ UpdateProfileTpt = ReactMeteor.createClass({
 
 	render: function() {
 		return (
-			<div>
+			<div className="small-header">
 				<Header title="Update Profile"
 					isTopNav="false"
 					class="center"
@@ -72,7 +72,7 @@ UpdateProfileTpt = ReactMeteor.createClass({
 					leftMethod={this.leftMethod}
 					rightMethod={this.rightMethod}/>
 
-				<section className="container">
+				<section className="container wrapper">
 					<form class="input-group">
 						<input type="text" ref="fullName" placeholder="full name"
 							value={this.state.model.fullName}

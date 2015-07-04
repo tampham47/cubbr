@@ -11,6 +11,30 @@ input[type="password"], textarea {
   padding-right: 10px;
 }
 
+body {
+  position: static;
+  color: black;
+
+  * {
+    color: black;
+  }
+}
+
+h6 {
+  margin-top: 0;
+  padding-left: @gutter;
+  font-weight: bold;
+  color: black;
+
+  &.user-bio-title {
+    padding-left: 0;
+  }
+}
+
+header, .segmented-control {
+  z-index: 3;
+}
+
 header {
   &.center {
     .title {
@@ -36,10 +60,21 @@ header {
   }
 }
 
+.segmented-control {
+  position: fixed;
+  top: 44px;
+  border-bottom: 4px solid whitesmoke;
+  border-radius: 0;
+
+  .control-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
 .container {
   position: relative;
-  top: 44px;
-  // padding: 10px 10px;
+  top: 84px;
   padding: 10px 0;
 
   ul {
@@ -47,6 +82,17 @@ header {
       margin-top: 0;
     }
   }
+}
+
+.small-header {
+  .container {
+    top: 44px;
+  }
+}
+
+.wrapper {
+  padding-left: @gutter;
+  padding-right: @gutter;
 }
 
 .hidden {
@@ -63,12 +109,127 @@ header {
   }
 }
 
-.segmented-control {
-  position: relative;
-  top: 44px;
+.pull-right {
+  text-align: right;
+}
 
-  .control-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
+.small-title {
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.small-title-topic {
+    text-transform: uppercase;
+  }
+}
+
+.table-view.table-view-comment {
+  border-top: 0;
+  border-bottom: 0;
+
+  li {
+    padding: 5px @gutter;
+
+    .media-object {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.user-block {
+  margin-bottom: 5px;
+
+  .user-fullname {
+    text-transform: uppercase;
+  }
+
+  .user-occupation {
+  }
+}
+
+.activ-block {
+  .activ-content {
+    font-size: 14px;
+  }
+
+  .activ-date {
+    text-align: right;
+  }
+}
+
+.comment-list {
+  margin-top: @gutter;
+
+  .cmt-title {
+    font-size: 14px;
+  }
+
+  .cmt-content {
+    font-size: 13px;
+  }
+}
+
+.input-group {
+  position: relative;
+  padding: 5px 10px;
+
+  .input-content {
+    padding-right: 60px;
+    padding-left: 0;
+    border: 0;
+    background-image: none;
+  }
+
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+  }
+}
+
+.table-view.table-view-topic {
+  li {
+    background-image: none;
+    border-bottom: 1px solid whitesmoke;
+  }
+}
+
+.table-view.table-view-custom {
+  li {
+    background-image: none;
+    border-bottom: 1px solid whitesmoke;
+    // padding-left: 10px;
+  }
+}
+
+.user-list {
+  .table-view-cell {
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .media-object {
+    width: 40px;
+
+  }
+}
+
+.user-info-list, .user-message-list {
+  .table-view-cell {
+    padding-right: @gutter;
+  }
+}
+
+.user-message-list {
+  .table-view-cell {
+    a {
+      margin-right: -10px;
+    }
   }
 }

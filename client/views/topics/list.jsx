@@ -1,3 +1,4 @@
+
 TopicsListTpt = ReactMeteor.createClass({
   templateName: 'TopicsListTpt',
 
@@ -10,12 +11,13 @@ TopicsListTpt = ReactMeteor.createClass({
   render: function() {
     return (
       <div>
-        <Header title="Topics" />
+        <Header navActive="2" isHeader="true"
+          plusHref="/topics/new" />
+
         <div className="container content">
-          <ul className="table-view">
-            <li className="table-view-cell table-view-divider">
-              <span className="text-center">Topics arround 1.5km</span>
-            </li>
+          <h6 className="small-title">Topics arround 0.5km</h6>
+
+          <ul className="table-view table-view-topic topic-list">
             <li className="table-view-cell media">
               <a className="navigate-right" href="/topics/detail" data-transition="slide-in">
                 <div className="media-body">Argo</div>
