@@ -19,7 +19,7 @@ ActivNewTpt = ReactMeteor.createClass({
 	render: function() {
 		return (
 			<div>
-				<Header type="activities-new"/>
+				<Header title="Activities" type="activities-new"/>
 				<section className="content page-content-container page-activities-new">
 					<div className="page-content">
 						<textarea name="post" rows="7" placeholder="Hoạt động" className="post"></textarea>

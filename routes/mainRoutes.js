@@ -75,3 +75,8 @@ Router.route('/messages/detail', function () {
   this.render('MessagesDetailTpt');
   SEO.set({ title: 'Messages Detail - ' + Meteor.App.NAME });
 });
+
+Router.route('/histories', function () {
+  this.render('MessagesListTpt');
+  SEO.set({ title: 'Messages List - ' + Meteor.App.NAME });
+});

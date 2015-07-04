@@ -11,7 +11,8 @@ ActivDetailTpt = ReactMeteor.createClass({
 	render: function() {
 		return (
 			<div>
-				<div className="content">
+				<Header title="Activities" />
+				<div className="container content">
 		      <ul className="table-view">
 		        <li className="table-view-cell table-view-divider">Activities arround 1.5km</li>
 		        <li className="table-view-cell media">

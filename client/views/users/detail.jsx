@@ -10,7 +10,8 @@ UsersDetailTpt = ReactMeteor.createClass({
   render: function() {
     return (
       <div>
-        <div className="content">
+        <Header title="Users" />
+        <div className="container content">
           <ul className="table-view">
             <li className="table-view-cell table-view-divider">
               <span className="text-center">Users Information</span>
