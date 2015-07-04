@@ -11,8 +11,6 @@ Meteor.methods({
   'Users.update': function(data) {
     check(data, Object);
 
-    console.log('user data', data);
-
     var user = Meteor.user();
     Meteor.users.update(
       {_id: user._id},

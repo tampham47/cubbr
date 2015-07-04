@@ -13,7 +13,6 @@ UsersListTpt = ReactMeteor.createClass({
 
   getMeteorState: function() {
     var userList = Meteor.users.find({}).fetch();
-    console.log('userList', userList);
     return {
       userList: userList
     };
@@ -22,8 +21,8 @@ UsersListTpt = ReactMeteor.createClass({
   render: function() {
     var userItems = <p className="wrapper">No users</p>;
 
-    if (this.state.userList.length > 0) {
-      this.state.userList.map(function(item, i) {
+    if (this.state.userList.length) {
+      userItems = this.state.userList.map(function(item, i) {
         return (
           <li className="table-view-cell media">
             <a className="navigate-right" href="/users/detail" data-transition="slide-in">
