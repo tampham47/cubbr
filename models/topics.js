@@ -23,5 +23,9 @@ Meteor.methods({
 
   'Topics.update': function() {
     console.log('Topics.update');
+  },
+
+  'Topics.getById': function (topicId) {
+    return Topics.find({_id: topicId});
   }
 });

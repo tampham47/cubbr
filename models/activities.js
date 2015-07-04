@@ -3,7 +3,7 @@
 Activities = new Mongo.Collection('Activities');
 
 Meteor.methods({
-  'Activities.create': function(activityAttributes) {
+  'Activities.create': function (activityAttributes) {
     console.log('Activities.create');
     var activity = _.extend(activityAttributes, {
       userId: Meteor.user()._id,
@@ -18,11 +18,15 @@ Meteor.methods({
     return activityId;
   },
 
-  'Activities.remove': function(activityAttributes) {
+  'Activities.remove': function (activityAttributes) {
     console.log('Activities.remove');
   },
 
-  'Activities.update': function() {
+  'Activities.update': function () {
     console.log('Activities.update');
+  },
+
+  'Activities.getById': function (activityId) {
+    return Activities.find({_id: activityId});
   }
 });

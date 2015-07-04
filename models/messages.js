@@ -13,5 +13,9 @@ Meteor.methods({
 
   'Messages.update': function() {
     console.log('Messages.update');
+  },
+
+  'Messages.getById': function (messageId) {
+    return Messages.find({_id: messageId});
   }
 });
