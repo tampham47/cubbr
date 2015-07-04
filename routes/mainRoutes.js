@@ -67,7 +67,8 @@ Router.route('/topics/new', function () {
   SEO.set({ title: 'Topics List - ' + Meteor.App.NAME });
 });
 
-Router.route('/topics/detail', function () {
+Router.route('/topics/detail/:id', function () {
+  console.log('this.params', this.params);
   this.render('TopicsDetailTpt');
   SEO.set({ title: 'Topics Detail - ' + Meteor.App.NAME });
 });
