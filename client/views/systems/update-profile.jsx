@@ -14,13 +14,15 @@ UpdateProfileTpt = ReactMeteor.createClass({
 	},
 
 	rightMethod: function() {
-		window.location = '/activ';
+		// window.location = '/activ';
+		// history.pushState(null, null, '/activ');
+		Router.go('/activ');
 	},
 
 	render: function() {
 		return (
 			<div>
-				<Header title="Update Profile" leftIcon='' rightIcon=''
+				<Header title="Update Profile" left='' right=''
 					leftMethod={this.leftMethod}
 					rightMethod={this.rightMethod}/>
 
