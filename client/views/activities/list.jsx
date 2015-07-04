@@ -19,9 +19,6 @@ ActivListTpt = ReactMeteor.createClass({
         <Header navActive="1" isHeader="true"
           plusHref="/activ/new" />
         <div className="container content">
-          {/*<li className="table-view-cell table-view-divider">
-                      <span className="text-center">Activities arround 1.5km</span>
-                    </li>*/}
           <h6 className="small-title">Activities arround 1.5km</h6>
 
           <ul className="table-view">
