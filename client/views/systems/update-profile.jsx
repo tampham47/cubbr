@@ -5,7 +5,15 @@ UpdateProfileTpt = ReactMeteor.createClass({
 	startMeteorSubscriptions: function() {
 	},
 
+	// Make sure your component implements this method.
+	getMeteorState: function() {
+	},
+
 	getInitialState: function() {
+		LocationService.getCurrentPosition(function(pos) {
+			this.setState({position: position});
+		}.bind(this));
+
 		Meteor.call('Users.current', function(err, user) {
 			if (err) {
 				return;
@@ -16,6 +24,7 @@ UpdateProfileTpt = ReactMeteor.createClass({
 			var model = {
 				fullName: user.fullName || user.services.facebook.name,
 				email: user.email || user.services.facebook.email,
+				phoneNumber: user.phoneNumber,
 				occupation: user.occupation,
 				bio: user.bio
 			};
@@ -24,13 +33,10 @@ UpdateProfileTpt = ReactMeteor.createClass({
 		}.bind(this));
 
     return {
-    	model: {}
+    	model: {
+    	}
     };
   },
-
-	// Make sure your component implements this method.
-	getMeteorState: function() {
-	},
 
 	handleChange: function(e){
     var model = this.state.model;
@@ -39,14 +45,18 @@ UpdateProfileTpt = ReactMeteor.createClass({
   },
 
 	getModel: function() {
-		var model = {
+		console.log('this.model', this.state.model);
+
+		var model = _.extend(this.state.model, {
 			fullName: this.refs.fullName.getDOMNode().value,
 			email: this.refs.email.getDOMNode().value,
 			phoneNumber: this.refs.phoneNumber.getDOMNode().value,
 			occupation: this.refs.occupation.getDOMNode().value,
-			bio: this.refs.bio.getDOMNode().value
-		};
+			bio: this.refs.bio.getDOMNode().value,
+			position: this.state.position
+		});
 
+		console.log('model', model);
 		return model;
 	},
 
