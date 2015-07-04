@@ -27,7 +27,7 @@ Router.route('/activ/new', function () {
   SEO.set({ title: 'Activity New - ' + Meteor.App.NAME });
 });
 
-Router.route('/activ/detail', function () {
+Router.route('/activ/detail/:id', function () {
   this.render('ActivDetailTpt');
   SEO.set({ title: 'Activity Detail - ' + Meteor.App.NAME });
 });
