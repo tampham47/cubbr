@@ -6,12 +6,12 @@ Meteor.methods({
   'Activities.create': function (activityAttributes) {
     check(activityAttributes, Object);
 
-    var activity = {
+    var activity = _.extend(activityAttributes, {
       userId: Meteor.user()._id,
       username: Meteor.user().profile.name,
       postedDate: new Date(),
       topicName: activityAttributes.topicName
-    };
+    });
 
     var activityId = Activities.insert(activity);
 
