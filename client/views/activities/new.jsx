@@ -1,4 +1,3 @@
-
 ActivNewTpt = ReactMeteor.createClass({
 	templateName: 'ActivNewTpt',
 
@@ -22,13 +21,15 @@ ActivNewTpt = ReactMeteor.createClass({
     var model = this.state.model;
     model[e.target.name] = e.target.value;
     this.setState({model: model});
+    console.log(model);
   },
 
   getModel: function() {
     var model = {
-      content: this.refs.content.getDOMNode().value
+      content: this.refs.content.getDOMNode().value,
+      topicName: this.refs.topicName.getDOMNode().value
     };
-
+    console.log('model: ', model);
     return model;
   },
 
@@ -36,7 +37,8 @@ ActivNewTpt = ReactMeteor.createClass({
     Router.go('/activ');
   },
   rightMethod: function() {
-    Meteor.call('', this.getModel(), function(err, result) {
+    Meteor.call('Activities.create', this.getModel(), function (err, result) {
+      console.log('result: ', result);
       Router.go('/activ');
     });
   },
@@ -54,11 +56,12 @@ ActivNewTpt = ReactMeteor.createClass({
 				<section className="container">
 					<div className="wrapper">
             <form class="input-group">
-              <textarea rows="5" ref="content" placeholder="what do you want to share?"
+              <input type="text" ref="topicName" placeholder="Category Name" />
+              <textarea rows="5" ref="content" placeholder="What do you want to share?"
                 value={this.state.model.content}
-                onChange={this.handleChange}></textarea>
+                onBlur={this.handleChange}></textarea>
             </form>
-						<p className="note">* your activities just display within 1km radius of your location.</p>
+						<p className="note">* Your activities just display within 1km radius of your location.</p>
 					</div>
 				</section>
 			</div>

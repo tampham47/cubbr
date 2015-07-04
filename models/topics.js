@@ -7,7 +7,7 @@ Meteor.methods({
     console.log('Topics.create');
     var topic = _.extend(topicAttributes, {
       userId: Meteor.user()._id,
-      username: Meteor.user().username,
+      username: Meteor.user().profile.name,
       postedDate: new Date(),
       topicName: topicAttributes.title,
     });

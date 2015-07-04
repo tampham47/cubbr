@@ -4,14 +4,14 @@ Activities = new Mongo.Collection('Activities');
 
 Meteor.methods({
   'Activities.create': function (activityAttributes) {
-    console.log('Activities.create');
-    var activity = _.extend(activityAttributes, {
+    check(activityAttributes, Object);
+
+    var activity = {
       userId: Meteor.user()._id,
-      username: Meteor.user().username,
+      username: Meteor.user().profile.name,
       postedDate: new Date(),
-      topicName: activityAttributes.topicName,
-      activityName: activityAttributes.activityName,
-    });
+      topicName: activityAttributes.topicName
+    };
 
     var activityId = Activities.insert(activity);
 
