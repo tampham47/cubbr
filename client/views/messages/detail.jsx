@@ -11,7 +11,7 @@ MessagesDetailTpt = ReactMeteor.createClass({
     return (
       <div>
         <Header navActive="4" isHeader="true"
-          plusHref="/topics/new" />
+          plusHref="/activ/new" />
 
         <div className="container content">
           <h6 className="small-title">Messages</h6>
