@@ -7,6 +7,17 @@ UsersDetailTpt = ReactMeteor.createClass({
   getMeteorState: function() {
   },
 
+  getInitialState: function() {
+    var userId = Router.current().params.id;
+    Meteor.call('Users.getById', userId, function(err, data) {
+      this.setState({user: data});
+    }.bind(this));
+
+    return {
+      user: {}
+    };
+  },
+
   render: function() {
     return (
       <div>
@@ -19,28 +30,28 @@ UsersDetailTpt = ReactMeteor.createClass({
             <li className="table-view-cell media">
               <span className="media-object pull-left icon icon-person"></span>
               <div className="media-body">
-                Tan Nguyen
+                {this.state.user.fullName}
               </div>
             </li>
             <li className="table-view-cell media">
               <span className="media-object pull-left icon icon-compose"></span>
               <div className="media-body">
-                tannd1993@gmail.com
+                {this.state.user.email}
               </div>
             </li>
             <li className="table-view-cell media">
               <span className="media-object pull-left icon icon-plus"></span>
               <div className="media-body">
-                01642922011
+                {this.state.user.phoneNumber}
               </div>
             </li>
             <li className="table-view-cell media">
               <h6 className="user-bio-title">bio</h6>
-              <p className="user-bio-content">Mình là tư, mình yêu màu tím, thích màu hường</p>
+              <p className="user-bio-content">{this.state.user.bio}</p>
             </li>
           </ul>
           <div className="wrapper">
-            <button className="btn btn-positive btn-block btn-outlined">Send a message</button>
+            <a href={"/message/detail/" + this.state.user._id} className="btn btn-positive btn-block btn-outlined">Send a message</a>
           </div>
         </div>
       </div>

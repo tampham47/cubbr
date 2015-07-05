@@ -8,9 +8,7 @@ TopicsDetailTpt = ReactMeteor.createClass({
 
   getMeteorState: function() {
     var topicId = Router.current().params.id;
-    // var activList = Activities.find({topicId: topicId}).fetch();
     var activList = Activities.find({}).fetch();
-    console.log('activList', activList);
     return {
       activList: activList
     };
@@ -23,10 +21,12 @@ TopicsDetailTpt = ReactMeteor.createClass({
         return;
       }
       Session.set('currentTopic', data);
-    });
+      this.setState({currentTopic: data});
+    }.bind(this));
 
     return {
-      activList: []
+      activList: [],
+      currentTopic: {}
     };
   },
 
@@ -54,7 +54,7 @@ TopicsDetailTpt = ReactMeteor.createClass({
           plusHref="/activ/new" />
 
         <div className="container">
-          <h6 className="small-title small-title-topic">Angle hack vietnam</h6>
+          <h6 className="small-title small-title-topic">{this.state.currentTopic.topicName}</h6>
           <ul className="table-view table-view-custom">
             {activListRender}
           </ul>
