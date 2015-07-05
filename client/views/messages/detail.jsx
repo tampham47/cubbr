@@ -30,7 +30,7 @@ MessagesDetailTpt = ReactMeteor.createClass({
                 <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tam Pham
-                  <p>Javascript Developer</p>
+                  <p>Reference site about Lorem Ipsum, giving information on its origins</p>
                 </div>
               </a>
             </li>
@@ -48,7 +48,7 @@ MessagesDetailTpt = ReactMeteor.createClass({
                 <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tan Nguyen
-                  <p>Javascript Developer</p>
+                  <p>Reference site about Lorem Ipsum, giving information on its origins</p>
                 </div>
               </a>
             </li>
@@ -57,7 +57,7 @@ MessagesDetailTpt = ReactMeteor.createClass({
                 <img className="media-object pull-left" src="/images/thumbnail_48x48.png" alt="Placeholder" />
                 <div className="media-body">
                   Tam Pham
-                  <p>Javascript Developer</p>
+                  <p>Reference site about Lorem Ipsum, giving information on its origins</p>
                 </div>
               </a>
             </li>

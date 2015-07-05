@@ -81,7 +81,7 @@ ActivListTpt = ReactMeteor.createClass({
           plusHref="/activ/new" />
         <div className="container content">
           <h6 className="small-title">Activities around 1.5km</h6>
-          <ul className="table-view">
+          <ul className="table-view table-view-activ">
             {listItem}
           </ul>
         </div>

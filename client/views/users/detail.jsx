@@ -51,7 +51,7 @@ UsersDetailTpt = ReactMeteor.createClass({
             </li>
           </ul>
           <div className="wrapper">
-            <a href={"/message/detail/" + this.state.user._id} className="btn btn-positive btn-block btn-outlined">Send a message</a>
+            <a href={"/messages/detail/" + this.state.user._id} className="btn btn-positive btn-block btn-outlined">Send a message</a>
           </div>
         </div>
       </div>
