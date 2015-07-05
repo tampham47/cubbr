@@ -40,8 +40,6 @@ ActivListTpt = ReactMeteor.createClass({
     //   }
     // });
 
-    console.log('activList', activList);
-
     return {
       activList: activList
     };
@@ -53,10 +51,7 @@ ActivListTpt = ReactMeteor.createClass({
 
     if (this.state.activList.length) {
       listItem = this.state.activList.map(function (item, i) {
-
-        console.log(item.userId);
         var user = Meteor.users.findOne({_id: item.userId});
-        // console.log(user.services);
         for (var key in user.services) {
           if (user.services.hasOwnProperty(key)) {
              var obj = user.services[key];
