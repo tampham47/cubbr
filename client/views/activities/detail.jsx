@@ -71,7 +71,7 @@ ActivDetailTpt = ReactMeteor.createClass({
               <img className="media-object pull-left" src="../../images/thumbnail_64x64.png" alt="Placeholder" />
               <div className="media-body">
                 <p className="user-fullname">{item.username}</p>
-                <p className="user-occupation">{item.occupation || item.email}</p>
+                <p className="user-occupation">{item.occupation || "---"}</p>
               </div>
             </li>
           </ul>
