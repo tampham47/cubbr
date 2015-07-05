@@ -4,6 +4,7 @@ ActivDetailTpt = ReactMeteor.createClass({
   startMeteorSubscriptions: function() {
     var activId = Router.current().params.id;
     Meteor.subscribe('Comments.getByActivity', activId);
+    Meteor.subscribe('Users.getByLocation');
   },
 
   // Make sure your component implements this method.
@@ -61,14 +62,32 @@ ActivDetailTpt = ReactMeteor.createClass({
   render: function() {
     var activityDetail = '';
     var commentListRender = <p className="wrapper">No comments</p>;
-
+    var imageUrl = "../../images/thumbnail_64x64.png";
     if (this.state.activity) {
       item = this.state.activity;
+      console.log('item - ', item);
+
+      var user = Meteor.users.findOne({_id: item.userId});
+      console.log(user);
+      // for (var key in user.services) {
+      //   if (user.services.hasOwnProperty(key)) {
+      //      var obj = user.services[key];
+      //       for (var prop in obj) {
+      //         if(obj.hasOwnProperty(prop)) {
+      //           if (prop === 'id') {
+      //             imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+      //             break;
+      //           }
+      //         }
+      //      }
+      //   }
+      // }
+
       activityDetail = (
         <div>
           <ul className="table-view table-view-comment user-block">
             <li className="table-view-cell media">
-              <img className="media-object pull-left" src="../../images/thumbnail_64x64.png" alt="Placeholder" />
+              <img className="media-object pull-left" src={imageUrl} alt="Placeholder" />
               <div className="media-body">
                 <p className="user-fullname">{item.username}</p>
                 <p className="user-occupation">{item.occupation || "---"}</p>

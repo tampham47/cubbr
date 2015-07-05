@@ -56,7 +56,7 @@ ActivListTpt = ReactMeteor.createClass({
 
         console.log(item.userId);
         var user = Meteor.users.findOne({_id: item.userId});
-        console.log(user.services);
+        // console.log(user.services);
         for (var key in user.services) {
           if (user.services.hasOwnProperty(key)) {
              var obj = user.services[key];
