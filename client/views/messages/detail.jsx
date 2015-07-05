@@ -66,7 +66,7 @@ MessagesDetailTpt = ReactMeteor.createClass({
         var avatarPath = this.getAvatarPath(item.fromUser);
         return (
           <li className="table-view-cell media">
-            <a className="" href="/messages/detail" data-transition="slide-in">
+            <a className="" href="javascript:;" data-transition="slide-in">
               <img className="media-object pull-left"
                 src={avatarPath}
                 alt="Placeholder" />
