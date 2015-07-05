@@ -21,6 +21,19 @@ ActivListTpt = ReactMeteor.createClass({
   // Make sure your component implements this method.
   getMeteorState: function() {
     var activList = Activities.find({}).fetch();
+    console.log('before activList', activList);
+
+    _.forEach(activList, function(item, i) {
+      console.log('activList', i, item.userId);
+      activList[i].user = Meteor.call('Users.getById', item.userId, function(err, data) {
+        console.log('data', i, data);
+        return data;
+        // item.user = data;
+      });
+    });
+
+    console.log('activList', activList);
+
     return {
       activList: activList
     };
@@ -38,7 +51,7 @@ ActivListTpt = ReactMeteor.createClass({
 
     if (this.state.activList.length) {
       listItem = this.state.activList.map(function (item, i) {
-        console.log(item);
+        // console.log(item);
         return (
           <li className="table-view-cell media">
             <a className="navigate-right" href={"/activ/detail/" + item._id} data-transition="slide-in">
@@ -58,7 +71,7 @@ ActivListTpt = ReactMeteor.createClass({
         <Header navActive="1" isHeader="true"
           plusHref="/activ/new" />
         <div className="container content">
-          <h6 className="small-title">Activities arround 1.5km</h6>
+          <h6 className="small-title">Activities around 1.5km</h6>
           <ul className="table-view">
             {listItem}
           </ul>
