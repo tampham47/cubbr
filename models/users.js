@@ -10,6 +10,9 @@ Meteor.methods({
 
   'Users.getById': function(userId) {
     check(userId, String);
+    // console.log('arguments', arguments);
+    // check(arguments, [Match.Any]);
+
     return Meteor.users.findOne({_id: userId});
   },
 

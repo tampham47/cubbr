@@ -43,7 +43,7 @@ TopicsListTpt = ReactMeteor.createClass({
 
         <div className="container content">
           <h6 className="small-title">
-            Topics arround 0.5km
+            Topics around 0.5km
             <a href="/topics/new" className="btn-new-topic pull-right">NEW TOPIC</a>
           </h6>
 

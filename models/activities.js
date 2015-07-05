@@ -28,6 +28,7 @@ Meteor.methods({
   },
 
   'Activities.getById': function (activityId) {
-    return Activities.find({_id: activityId});
+    check(activityId, String);
+    return Activities.findOne({_id: activityId});
   }
 });
