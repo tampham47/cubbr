@@ -40,10 +40,10 @@ MessagesListTpt = ReactMeteor.createClass({
     return (
       <div>
         <Header navActive="4" isHeader="true"
-          plusHref="/topics/new" />
+          plusHref="/activ/new" />
 
         <div className="container content">
-          <h6 className="small-title">Histories</h6>
+          <h6 className="small-title">Messages</h6>
           <ul className="table-view table-view-custom user-list">
             {userListRender}
           </ul>

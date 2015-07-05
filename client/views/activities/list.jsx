@@ -16,8 +16,32 @@ ActivListTpt = ReactMeteor.createClass({
 
   // Make sure your component implements this method.
   getMeteorState: function() {
+    var userList = [];
     var activList = Activities.find({}).fetch();
+
     console.log(activList);
+
+
+    // console.log('before activList', activList);
+    // _.forEach(activList, function(item, i) {
+    //   console.log('activList', i, item.userId);
+    //   if (userList[item.userList]) {
+    //     item.user = userList[item.userList];
+    //   } else {
+    //     Meteor.call('Users.getById', item.userId, function(err, data) {
+    //       if (err) {
+    //         return;
+    //       }
+    //       console.log('data', i, data);
+    //       userList[item.userId] = data;
+    //       // return data;
+    //       item.user = data;
+    //     });
+    //   }
+    // });
+
+    console.log('activList', activList);
+
     return {
       activList: activList
     };
@@ -29,6 +53,7 @@ ActivListTpt = ReactMeteor.createClass({
 
     if (this.state.activList.length) {
       listItem = this.state.activList.map(function (item, i) {
+
         console.log(item);
         Meteor.call('Users.getById', item.userId, function (err, result) {
           console.log(result.services);
@@ -46,6 +71,9 @@ ActivListTpt = ReactMeteor.createClass({
           //   }
           // }
         });
+
+
+        // console.log(item);
 
         return (
           <li className="table-view-cell media">
@@ -66,8 +94,8 @@ ActivListTpt = ReactMeteor.createClass({
         <Header navActive="1" isHeader="true"
           plusHref="/activ/new" />
         <div className="container content">
-          <h6 className="small-title">Activities arround 1.5km</h6>
-          <ul className="table-view">
+          <h6 className="small-title">Activities around 1.5km</h6>
+          <ul className="table-view table-view-activ">
             {listItem}
           </ul>
         </div>

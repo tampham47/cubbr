@@ -22,7 +22,7 @@ UsersDetailTpt = ReactMeteor.createClass({
     return (
       <div>
         <Header navActive="3" isHeader="true"
-          plusHref="/topics/new" />
+          plusHref="/activ/new" />
 
         <div className="container content">
           <h6 className="small-title">Users information</h6>
@@ -51,7 +51,7 @@ UsersDetailTpt = ReactMeteor.createClass({
             </li>
           </ul>
           <div className="wrapper">
-            <a href={"/message/detail/" + this.state.user._id} className="btn btn-positive btn-block btn-outlined">Send a message</a>
+            <a href={"/messages/detail/" + this.state.user._id} className="btn btn-positive btn-block btn-outlined">Send a message</a>
           </div>
         </div>
       </div>

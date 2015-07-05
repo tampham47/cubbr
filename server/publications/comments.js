@@ -5,6 +5,7 @@ Meteor.publish('Comments.getAll', function() {
   return Comments.find({});
 });
 
-Meteor.publish('Comments.getByActivity', function() {
-  return Comments.find({});
+Meteor.publish('Comments.getByActivity', function(activId) {
+  check(activId, String);
+  return Comments.find({activId: activId});
 });

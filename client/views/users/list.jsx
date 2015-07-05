@@ -53,10 +53,10 @@ UsersListTpt = ReactMeteor.createClass({
     return (
       <div>
         <Header navActive="3" isHeader="true"
-          plusHref="/topics/new" />
+          plusHref="/activ/new" />
 
         <div className="container content">
-          <h6 className="small-title">Users arround 0.5km</h6>
+          <h6 className="small-title">Users around 0.5km</h6>
 
           <ul className="table-view table-view-custom user-list">
             {userItems}

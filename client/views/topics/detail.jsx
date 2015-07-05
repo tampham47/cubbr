@@ -82,7 +82,7 @@ TopicsDetailTpt = ReactMeteor.createClass({
 
         <div className="container">
           <h6 className="small-title small-title-topic">{this.state.currentTopic.topicName}</h6>
-          <ul className="table-view table-view-custom">
+          <ul className="table-view table-view-activ">
             {activListRender}
           </ul>
         </div>
