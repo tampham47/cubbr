@@ -1,4 +1,4 @@
-function loadUser(user) {
+ function loadUser(user) {
   var userAlreadyExists = typeof Meteor.users.findOne({ username : user.username }) === 'object';
 
   if (!userAlreadyExists) {
