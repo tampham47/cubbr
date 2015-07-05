@@ -28,7 +28,7 @@ Header = React.createClass({
             href="/users">Users
           </a>
           <a className={"control-item " + (this.props.navActive==="4"?"active":"")}
-            href="/histories">Messages
+            href="/messages">Messages
           </a>
         </div>
       );

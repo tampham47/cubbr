@@ -39,23 +39,24 @@ TopicsDetailTpt = ReactMeteor.createClass({
     if (this.state.activList.length) {
       activListRender = this.state.activList.map(function(item, i) {
         console.log('item: ', item);
-        var user = Meteor.users.findOne({_id: item.userId});
-        console.log(user.services);
-        if (user.services) {
-          for (var key in user.services) {
-            if (user.services.hasOwnProperty(key)) {
-               var obj = user.services[key];
-                for (var prop in obj) {
-                  if(obj.hasOwnProperty(prop)) {
-                    if (prop === 'id') {
-                      imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
-                      break;
-                    }
-                  }
-               }
-            }
-          }
-        }
+        // get avatar okie
+        // var user = Meteor.users.findOne({_id: item.userId});
+        // console.log(user.services);
+        // if (user.services) {
+        //   for (var key in user.services) {
+        //     if (user.services.hasOwnProperty(key)) {
+        //        var obj = user.services[key];
+        //         for (var prop in obj) {
+        //           if(obj.hasOwnProperty(prop)) {
+        //             if (prop === 'id') {
+        //               imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+        //               break;
+        //             }
+        //           }
+        //        }
+        //     }
+        //   }
+        // }
 
         return (
           <li className="table-view-cell media">
