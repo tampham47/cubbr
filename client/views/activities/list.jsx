@@ -54,26 +54,22 @@ ActivListTpt = ReactMeteor.createClass({
     if (this.state.activList.length) {
       listItem = this.state.activList.map(function (item, i) {
 
-        console.log(item);
-        Meteor.call('Users.getById', item.userId, function (err, result) {
-          console.log(result.services);
-          // for (var key in result.services) {
-          //   if (result.services.hasOwnProperty(key)) {
-          //      var obj = result.services[key];
-          //       for (var prop in obj) {
-          //         if(obj.hasOwnProperty(prop)) {
-          //           if (prop === 'id') {
-          //             imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
-          //             break;
-          //           }
-          //         }
-          //      }
-          //   }
-          // }
-        });
-
-
-        // console.log(item);
+        console.log(item.userId);
+        var user = Meteor.users.findOne({_id: item.userId});
+        console.log(user.services);
+        for (var key in user.services) {
+          if (user.services.hasOwnProperty(key)) {
+             var obj = user.services[key];
+              for (var prop in obj) {
+                if(obj.hasOwnProperty(prop)) {
+                  if (prop === 'id') {
+                    imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+                    break;
+                  }
+                }
+             }
+          }
+        }
 
         return (
           <li className="table-view-cell media">

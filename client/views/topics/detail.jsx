@@ -26,14 +26,6 @@ TopicsDetailTpt = ReactMeteor.createClass({
       this.setState({currentTopic: data});
     }.bind(this));
 
-    // Meteor.call('Users.getByTopicId', topicId, function(err, data) {
-    //   if (err) {
-    //     return;
-    //   }
-    //   Session.set('user', data);
-    //   this.setState({user: data});
-    // }.bind(this));
-
     return {
       activList: [],
       currentTopic: {}
@@ -48,19 +40,22 @@ TopicsDetailTpt = ReactMeteor.createClass({
       activListRender = this.state.activList.map(function(item, i) {
 
         console.log('item: ', item);
-        // for (var key in item.services) {
-        //   if (item.services.hasOwnProperty(key)) {
-        //      var obj = item.services[key];
-        //       for (var prop in obj) {
-        //         if(obj.hasOwnProperty(prop)) {
-        //           if (prop === 'id') {
-        //             imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
-        //             break;
-        //           }
-        //         }
-        //      }
-        //   }
-        // }
+        var user = Meteor.users.findOne({_id: item.userId});
+        console.log(user.services);
+        for (var key in user.services) {
+          if (user.services.hasOwnProperty(key)) {
+             var obj = user.services[key];
+              for (var prop in obj) {
+                if(obj.hasOwnProperty(prop)) {
+                  if (prop === 'id') {
+                    imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+                    break;
+                  }
+                }
+             }
+          }
+        }
+
         return (
           <li className="table-view-cell media">
             <a className="navigate-right" href={"/activ/detail/" + item._id} data-transition="slide-in">
