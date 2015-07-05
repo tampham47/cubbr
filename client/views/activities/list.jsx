@@ -3,18 +3,14 @@ ActivListTpt = ReactMeteor.createClass({
 
 	startMeteorSubscriptions: function() {
     Meteor.subscribe('Activities.getByLocation');
+    Meteor.subscribe('Users.getByLocation');
 	},
 
   getInitialState: function() {
-    // Meteor.call('Users.getCurrent', function (err, result) {
-    //   this.setState({currentUser: result});
-    // }.bind(this));
-
     Session.set('currentTopic', null);
 
     return {
       activList: [],
-      currentUser: {}
     };
   },
 
@@ -22,6 +18,9 @@ ActivListTpt = ReactMeteor.createClass({
   getMeteorState: function() {
     var userList = [];
     var activList = Activities.find({}).fetch();
+
+    console.log(activList);
+
 
     // console.log('before activList', activList);
     // _.forEach(activList, function(item, i) {
@@ -41,8 +40,6 @@ ActivListTpt = ReactMeteor.createClass({
     //   }
     // });
 
-    console.log('activList', activList);
-
     return {
       activList: activList
     };
@@ -51,16 +48,24 @@ ActivListTpt = ReactMeteor.createClass({
   render: function() {
     var listItem = '';
     var imageUrl = "../images/thumbnail_64x64.png";
-    var services = this.state.currentUser.services;
-    // console.log('OKIE', services['facebook']);
-    if (this.state.currentUser) {
-      // imageUrl = "http://avatars.io/facebook/" + this.state.currentUser.services.facebook.id + "?size=medium";
-    }
-
 
     if (this.state.activList.length) {
       listItem = this.state.activList.map(function (item, i) {
-        // console.log(item);
+        var user = Meteor.users.findOne({_id: item.userId});
+        for (var key in user.services) {
+          if (user.services.hasOwnProperty(key)) {
+             var obj = user.services[key];
+              for (var prop in obj) {
+                if(obj.hasOwnProperty(prop)) {
+                  if (prop === 'id') {
+                    imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+                    break;
+                  }
+                }
+             }
+          }
+        }
+
         return (
           <li className="table-view-cell media">
             <a className="navigate-right" href={"/activ/detail/" + item._id} data-transition="slide-in">
