@@ -4,6 +4,8 @@ TopicsDetailTpt = ReactMeteor.createClass({
   startMeteorSubscriptions: function() {
     var topicId = Router.current().params.id;
     Meteor.subscribe('Activities.getByTopic', topicId);
+
+    Meteor.subscribe('Users.getByLocation');
   },
 
   getMeteorState: function() {
@@ -24,6 +26,14 @@ TopicsDetailTpt = ReactMeteor.createClass({
       this.setState({currentTopic: data});
     }.bind(this));
 
+    // Meteor.call('Users.getByTopicId', topicId, function(err, data) {
+    //   if (err) {
+    //     return;
+    //   }
+    //   Session.set('user', data);
+    //   this.setState({user: data});
+    // }.bind(this));
+
     return {
       activList: [],
       currentTopic: {}
@@ -32,12 +42,29 @@ TopicsDetailTpt = ReactMeteor.createClass({
 
   render: function() {
     var activListRender = <p className="wrapper">No activities</p>;
+    var imageUrl = "/images/thumbnail_64x64.png";
+
     if (this.state.activList.length) {
       activListRender = this.state.activList.map(function(item, i) {
+
+        console.log('item: ', item);
+        // for (var key in item.services) {
+        //   if (item.services.hasOwnProperty(key)) {
+        //      var obj = item.services[key];
+        //       for (var prop in obj) {
+        //         if(obj.hasOwnProperty(prop)) {
+        //           if (prop === 'id') {
+        //             imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+        //             break;
+        //           }
+        //         }
+        //      }
+        //   }
+        // }
         return (
           <li className="table-view-cell media">
             <a className="navigate-right" href={"/activ/detail/" + item._id} data-transition="slide-in">
-              <img className="media-object pull-left" src="/images/thumbnail_64x64.png" alt="Placeholder" />
+              <img className="media-object pull-left" src={imageUrl} alt="Placeholder" />
               <div className="media-body">
                 {item.fullName}
                 <p>{item.content}</p>

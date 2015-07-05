@@ -13,6 +13,11 @@ Meteor.methods({
     return Meteor.users.findOne({_id: userId});
   },
 
+  'Users.getByTopicId': function(topicId) {
+    check(topicId, String);
+    return Meteor.users.findOne({_id: topicId});
+  },
+
   'Users.update': function(data) {
     check(data, Object);
 

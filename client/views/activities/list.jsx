@@ -3,24 +3,21 @@ ActivListTpt = ReactMeteor.createClass({
 
 	startMeteorSubscriptions: function() {
     Meteor.subscribe('Activities.getByLocation');
+    Meteor.subscribe('Users.getByLocation');
 	},
 
   getInitialState: function() {
-    // Meteor.call('Users.getCurrent', function (err, result) {
-    //   this.setState({currentUser: result});
-    // }.bind(this));
-
     Session.set('currentTopic', null);
 
     return {
       activList: [],
-      currentUser: {}
     };
   },
 
   // Make sure your component implements this method.
   getMeteorState: function() {
     var activList = Activities.find({}).fetch();
+    console.log(activList);
     return {
       activList: activList
     };
@@ -29,16 +26,27 @@ ActivListTpt = ReactMeteor.createClass({
   render: function() {
     var listItem = '';
     var imageUrl = "../images/thumbnail_64x64.png";
-    var services = this.state.currentUser.services;
-    // console.log('OKIE', services['facebook']);
-    if (this.state.currentUser) {
-      // imageUrl = "http://avatars.io/facebook/" + this.state.currentUser.services.facebook.id + "?size=medium";
-    }
-
 
     if (this.state.activList.length) {
       listItem = this.state.activList.map(function (item, i) {
         console.log(item);
+        Meteor.call('Users.getById', item.userId, function (err, result) {
+          console.log(result.services);
+          // for (var key in result.services) {
+          //   if (result.services.hasOwnProperty(key)) {
+          //      var obj = result.services[key];
+          //       for (var prop in obj) {
+          //         if(obj.hasOwnProperty(prop)) {
+          //           if (prop === 'id') {
+          //             imageUrl = "http://avatars.io/facebook/" + obj[prop] + "?size=medium";
+          //             break;
+          //           }
+          //         }
+          //      }
+          //   }
+          // }
+        });
+
         return (
           <li className="table-view-cell media">
             <a className="navigate-right" href={"/activ/detail/" + item._id} data-transition="slide-in">
