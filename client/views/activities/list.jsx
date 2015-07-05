@@ -6,9 +6,9 @@ ActivListTpt = ReactMeteor.createClass({
 	},
 
   getInitialState: function() {
-    Meteor.call('Users.getCurrent', function (err, result) {
-      this.setState({currentUser: result});
-    }.bind(this));
+    // Meteor.call('Users.getCurrent', function (err, result) {
+    //   this.setState({currentUser: result});
+    // }.bind(this));
 
     Session.set('currentTopic', null);
 

@@ -30,15 +30,21 @@ ActivDetailTpt = ReactMeteor.createClass({
       item = this.state.activity;
       activityDetail = (function () {
         return (
-          <ul className="table-view table-view-comment user-block">
-            <li className="table-view-cell media">
-              <img className="media-object pull-left" src="../../images/thumbnail_64x64.png" alt="Placeholder" />
-              <div className="media-body">
-                <p className="user-fullname">{item.username}</p>
-                <p className="user-occupation">{item.occupation}</p>
-              </div>
-            </li>
-          </ul>
+          <div>
+            <ul className="table-view table-view-comment user-block">
+              <li className="table-view-cell media">
+                <img className="media-object pull-left" src="../../images/thumbnail_64x64.png" alt="Placeholder" />
+                <div className="media-body">
+                  <p className="user-fullname">{item.username}</p>
+                  <p className="user-occupation">{item.occupation}</p>
+                </div>
+              </li>
+            </ul>
+            <div className="activ-block wrapper">
+              <p className="activ-content">{item.content}</p>
+              <p className="activ-date">{item.postedDate}</p>
+            </div>
+          </div>
         );
       })();
     }
