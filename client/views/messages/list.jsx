@@ -29,7 +29,7 @@ MessagesListTpt = ReactMeteor.createClass({
               <img className="media-object pull-left" src="images/thumbnail_48x48.png" alt="Placeholder" />
               <div className="media-body">
                 {item.fullName}
-                <p>{item.occupation || item.email}</p>
+                <p>{item.occupation || "---"}</p>
               </div>
             </a>
           </li>
