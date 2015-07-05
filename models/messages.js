@@ -9,7 +9,9 @@ Meteor.methods({
     var fromUser = Meteor.user();
 
     var message = _.extend(model, {
+      fromUserId: fromUser._id,
       fromUser: fromUser,
+      toUserId: model.to,
       toUser: toUser,
       postedDate: new Date()
     });
