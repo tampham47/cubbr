@@ -20,17 +20,26 @@ ActivListTpt = ReactMeteor.createClass({
 
   // Make sure your component implements this method.
   getMeteorState: function() {
+    var userList = [];
     var activList = Activities.find({}).fetch();
-    console.log('before activList', activList);
 
-    _.forEach(activList, function(item, i) {
-      console.log('activList', i, item.userId);
-      activList[i].user = Meteor.call('Users.getById', item.userId, function(err, data) {
-        console.log('data', i, data);
-        return data;
-        // item.user = data;
-      });
-    });
+    // console.log('before activList', activList);
+    // _.forEach(activList, function(item, i) {
+    //   console.log('activList', i, item.userId);
+    //   if (userList[item.userList]) {
+    //     item.user = userList[item.userList];
+    //   } else {
+    //     Meteor.call('Users.getById', item.userId, function(err, data) {
+    //       if (err) {
+    //         return;
+    //       }
+    //       console.log('data', i, data);
+    //       userList[item.userId] = data;
+    //       // return data;
+    //       item.user = data;
+    //     });
+    //   }
+    // });
 
     console.log('activList', activList);
 
